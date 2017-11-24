@@ -1,0 +1,13 @@
+!SESSION 2017-11-24 16:30:53.228 -----------------------------------------------
+eclipse.buildId=2.0
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en
+Framework arguments:  -keyring /Users/elnacabotparedes/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -data /Users/elnacabotparedes/Deal_or_no_deal -keyring /Users/elnacabotparedes/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2017-11-24 16:31:01.306
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.tizen.common.ui.Startup 1 0 2017-11-24 16:31:02.699
+!MESSAGE SDK Information: Path [/Users/elnacabotparedes/tizen-studio], Data Path [/Users/elnacabotparedes/tizen-studio-data], Platform Path [/Users/elnacabotparedes/tizen-studio/platforms/tizen-4.0/wearable]
