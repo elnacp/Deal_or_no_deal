@@ -14,7 +14,7 @@
 <body>
   <div class=contents>
   	<div style='margin:auto;'>
-  		<span class=content_text id=textbox>Hello</span>
+  		<span class=content_text id=textbox>Basic</span>
   	</div>
   </div>
 </body>

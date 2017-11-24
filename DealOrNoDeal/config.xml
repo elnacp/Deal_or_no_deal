@@ -3,7 +3,7 @@
     <tizen:application id="h2D7B0q1T2.DealOrNoDeal" package="h2D7B0q1T2" required_version="3.0"/>
     <content src="index.html"/>
     <feature name="http://tizen.org/feature/screen.size.all"/>
-    <icon src="icon.png"/>
+    <icon src="logo.png"/>
     <name>DealOrNoDeal</name>
     <tizen:profile name="tv"/>
 </widget>
