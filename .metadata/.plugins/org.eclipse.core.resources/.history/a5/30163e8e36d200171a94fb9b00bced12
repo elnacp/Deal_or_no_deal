@@ -22,21 +22,12 @@ body {
 	color:#fff;
 }
 
-#container {
-  	display: flex;
-  	flex-flow: row nowrap; /* Align on the same line */
-  	justify-content: space-between; /* Equal margin between the child elements */
+#center-panel{
+	float:left;
 }
 
-
-
-
-
-
-
-
 #prizes{
-	width: 300px;
+	width: 400px;
 	height:50px;
 }
 

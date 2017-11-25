@@ -53,9 +53,6 @@
 				<input type="image"  id ="image" src="./img/chests/24.png"  />
 			</div>
 		</div>
-		<div id = "right">
-			<input type="image"  id ="prizes" src="./img/prizes/0,01.png"  />
-		</div>
 	</div>
 
 </body>
