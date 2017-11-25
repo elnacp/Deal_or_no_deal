@@ -17,20 +17,19 @@
 <body>
 	<div id="container">
 		<div id = "left">
-			<ul>
-				<input type="image"  id ="prizes" src="./img/prizes/0,01.png"   />
-				<input type="image"  id ="prizes" src="./img/prizes/0,5.png"   />
-				<input type="image"  id ="prizes" src="./img/prizes/1.png"  	/>
-				<input type="image"  id ="prizes" src="./img/prizes/5.png"  	/>
-				<input type="image"  id ="prizes" src="./img/prizes/10.png"     />
-				<input type="image"  id ="prizes" src="./img/prizes/30.png"     />
-				<input type="image"  id ="prizes" src="./img/prizes/50.png"     />
-				<input type="image"  id ="prizes" src="./img/prizes/70.png"     />
-				<input type="image"  id ="prizes" src="./img/prizes/100.png"    />
-				<input type="image"  id ="prizes" src="./img/prizes/300.png"    />
-				<input type="image"  id ="prizes" src="./img/prizes/500.png"    />
-				<input type="image"  id ="prizes" src="./img/prizes/1000.png"    />
-			</ul>
+			<input type="image"  id ="prizes" src="./img/prizes/0,01.png"   />
+			<input type="image"  id ="prizes" src="./img/prizes/0,5.png"   />
+			<input type="image"  id ="prizes" src="./img/prizes/1.png"  	/>
+			<input type="image"  id ="prizes" src="./img/prizes/5.png"  	/>
+			<input type="image"  id ="prizes" src="./img/prizes/10.png"     />
+			<input type="image"  id ="prizes" src="./img/prizes/30.png"     />
+			<input type="image"  id ="prizes" src="./img/prizes/50.png"     />
+			<input type="image"  id ="prizes" src="./img/prizes/70.png"     />
+			<input type="image"  id ="prizes" src="./img/prizes/100.png"    />
+			<input type="image"  id ="prizes" src="./img/prizes/300.png"    />
+			<input type="image"  id ="prizes" src="./img/prizes/500.png"    />
+			<input type="image"  id ="prizes" src="./img/prizes/1000.png"    />
+			
 		</div>
 		<div id="central">
 			<div id="chests">

@@ -23,7 +23,7 @@ body {
 }*/
 
 #center{
-	float:left;
+	display:left;
 }
 
 #right{

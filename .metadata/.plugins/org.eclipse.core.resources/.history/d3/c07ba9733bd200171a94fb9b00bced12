@@ -22,19 +22,17 @@ body {
 	color:#fff;
 }*/
 
-#center{
-	float:left;
-}
-
-#right{
-	float:left;
+#container {
+  	display: flex;
+  	flex-flow: row nowrap; /* Align on the same line */
+  	justify-content: space-between; /* Equal margin between the child elements */
 }
 
 
 
 #prizes{
 	width: 400px;
-	height:60px;
+	height:150px;
 }
 
 #image{

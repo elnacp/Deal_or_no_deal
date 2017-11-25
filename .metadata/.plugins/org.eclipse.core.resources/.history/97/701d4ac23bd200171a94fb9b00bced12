@@ -23,11 +23,11 @@ body {
 }*/
 
 #center{
-	float:left;
+	display:left;
 }
 
 #right{
-	float:left;
+	display:left;
 }
 
 

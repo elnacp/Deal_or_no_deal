@@ -22,19 +22,15 @@ body {
 	color:#fff;
 }*/
 
-#center{
-	float:left;
-}
-
-#right{
-	float:left;
+#container {
+  	text-align:center;
 }
 
 
 
 #prizes{
-	width: 400px;
-	height:60px;
+	width: 300px;
+	height:50px;
 }
 
 #image{
