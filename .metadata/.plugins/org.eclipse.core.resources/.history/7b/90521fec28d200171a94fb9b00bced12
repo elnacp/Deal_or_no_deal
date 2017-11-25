@@ -12,7 +12,7 @@ window.onload = function () {
     });
 
     
-    
+    console.log("HELLO");
     // Sample code
     /*var textbox = document.querySelector('.contents');
     textbox.addEventListener("click", function(){
@@ -20,5 +20,8 @@ window.onload = function () {
     	box.innerHTML = box.innerHTML == "Basic" ? "Funciona" : "Basic";
     }); */
     
-   
+    $('#image').addEventListener("click", function(){
+    	console.log("hello");
+    });
+    
 };

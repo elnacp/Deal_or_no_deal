@@ -21,14 +21,3 @@ body {
 	font-size:5em;
 	color:#fff;
 }
-
-#image{
-	width:200px;
-	height:150px;
-	float:left;
-	border: 2px solid white;
-}
-
-#chests{
-	float:left;
-}
