@@ -3000,3 +3000,63 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.tizen.common.connection.toolbar.EmulatorLaunchWorker 4 0 2017-11-26 01:04:59.049
+!MESSAGE [2017.11.26 01:04:59][ERROR] EmulatorLaunchWorker.java(98) - Timeout occurred to get (emulator-26101) booting done msg: null
+
+
+!ENTRY org.tizen.common.connection.toolbar.EmulatorLaunchWorker 4 0 2017-11-26 01:05:00.868
+!MESSAGE [2017.11.26 01:05:00][ERROR] EmulatorLaunchWorker.java(98) - Timeout occurred to get (emulator-26101) booting done msg: null
+
+
+!ENTRY org.tizen.common.core.application.ProfileInfo 4 0 2017-11-26 01:05:10.818
+!MESSAGE [2017.11.26 01:05:10][ERROR] ProfileInfo.java(426) - Failed to get a device information from 'emulator-26101' (null) 
+
+!STACK 0
+org.tizen.sdblib.exception.SdbCommandRejectedException: closed
+	at org.tizen.sdblib.SdbHelper.sendServiceRequest(SdbHelper.java:527)
+	at org.tizen.sdblib.PlatformInfo.<init>(PlatformInfo.java:68)
+	at org.tizen.sdblib.Device.getPlatformInfo(Device.java:842)
+	at org.tizen.common.core.application.ProfileInfo.getProfileInfo(ProfileInfo.java:409)
+	at org.tizen.common.util.LaunchUtil.checkProfile(LaunchUtil.java:158)
+	at org.tizen.web.zimlaunch.deployer.ZimLaunchDelegate.preLaunchCheck(ZimLaunchDelegate.java:141)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:840)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.tizen.common.core.application.ProfileInfo 4 0 2017-11-26 01:05:10.822
+!MESSAGE [2017.11.26 01:05:10][ERROR] ProfileInfo.java(426) - Failed to get a device information from 'emulator-26101' (null) 
+
+!STACK 0
+org.tizen.sdblib.exception.SdbCommandRejectedException: closed
+	at org.tizen.sdblib.SdbHelper.sendServiceRequest(SdbHelper.java:527)
+	at org.tizen.sdblib.PlatformInfo.<init>(PlatformInfo.java:68)
+	at org.tizen.sdblib.Device.getPlatformInfo(Device.java:842)
+	at org.tizen.common.core.application.ProfileInfo.getProfileInfo(ProfileInfo.java:409)
+	at org.tizen.common.util.LaunchUtil.checkProfile(LaunchUtil.java:158)
+	at org.tizen.web.zimlaunch.deployer.ZimLaunchDelegate.preLaunchCheck(ZimLaunchDelegate.java:141)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:840)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.tizen.web.zimlaunch 4 0 2017-11-26 01:05:13.652
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.tizen.web.zimlaunch.step.InitLaunchStep.executeStep(InitLaunchStep.java:162)
+	at org.tizen.web.zimlaunch.core.CompositeStep.executeStep(CompositeStep.java:109)
+	at org.tizen.web.zimlaunch.deployer.ZimLaunchDelegate.preLaunch(ZimLaunchDelegate.java:246)
+	at org.tizen.web.zimlaunch.deployer.ZimLaunchDelegate.launch(ZimLaunchDelegate.java:277)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.tizen.common.connection.toolbar.EmulatorLaunchWorker 4 0 2017-11-26 01:12:15.609
+!MESSAGE [2017.11.26 01:12:15][ERROR] EmulatorLaunchWorker.java(73) - Timeout to wait for emulator booting done
+
