@@ -22,37 +22,38 @@ body {
 	color:#fff;
 }*/
 
-
-#left{
-	float:left;
-	width:300px;
-	
+.col-md-2{
+	margin: auto;
+	border: none;
+	padding: 10px;
+	display: block;
+	background-color:lavender;
 }
 
-#center{
-	float:left;
-	width: 900px;; 
+.col-md-8{
+	padding-left: 70px;
+	padding-top: 45px;
+	padding-bottom: 40px;
+	text-align: center;
+	background-color: red;
+	margin: none;
+	display: block;
 }
-
-#right{
-	float:left;
-	width: 300px;;
-}
-
-
 
 #prizes{
-	width: 300px;
+	width: 100%;
 	height:50px;
 }
 
 #image{
-	width:200px;
-	height:150px;
-	float:left;
+	
+	max-width:200px;
+	max-height:150px;
 	border: 2px solid white;
 }
 
 #chests{
-	float:left;
+	
+	margin: none;
+	width: 100%;
 }
