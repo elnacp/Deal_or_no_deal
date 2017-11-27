@@ -40,14 +40,9 @@ body {
 	display: block;
 }
 
-textarea{
+/*textarea{
 	width:800px;
-}
-
-#user_chest{
-	width:580px;
-	height:400px;
-}
+}*/
 
 
 #prizes{

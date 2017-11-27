@@ -27,7 +27,7 @@ body {
 	border: none;
 	padding: 10px;
 	display: block;
-	background-color:lavender;
+	/*background-color:lavender;*/
 }
 
 .col-md-8{
@@ -39,16 +39,6 @@ body {
 	margin: none;
 	display: block;
 }
-
-textarea{
-	width:800px;
-}
-
-#user_chest{
-	width:580px;
-	height:400px;
-}
-
 
 #prizes{
 	width: 100%;

@@ -46,7 +46,7 @@ textarea{
 
 #user_chest{
 	width:580px;
-	height:400px;
+	height:10px;
 }
 
 

@@ -95,9 +95,8 @@
  		 </div>
  		 
  		 <div class="row">
- 		 		<input type="image" id="presenter" src="./img/banquero_propuesta.jpg"/>
- 		 		<textarea rows="4" cols="6">HELLO!</textarea>  
- 		 		<input type="image" id="user_chest" src="./img/chest_user.png"/>
+ 		 		<input type="image" id="presenter" src="./img/banquero_propuesta.png"/>
+ 		 
  		  </div>
 	</div>
 	 
