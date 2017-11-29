@@ -42,7 +42,7 @@
     		<div class="col-md-8">
     		
     			<div id="chests" class= "row">
-					<input type="image"  class ="image-chest" id="selector" name="1" src="./img/chests/1.png"  />
+					<input type="image"  class ="image-chest" id="" name="1" src="./img/chests/1.png"  />
 					<input type="image"  class ="image-chest" id="" name="2" src="./img/chests/2.png"  />
 					<input type="image"  class ="image-chest" id="" name="3" src="./img/chests/3.png"  />
 					<input type="image"  class ="image-chest" id="" name="4" src="./img/chests/4.png"  />

@@ -33,10 +33,8 @@ window.onload = function () {
 			case 40:  //DOWN
 				down = 1;
 				break;
+	
     	}
-    	
-    	changeSelector(selector, up, down, right, left);
-    	
     	
     	
     });

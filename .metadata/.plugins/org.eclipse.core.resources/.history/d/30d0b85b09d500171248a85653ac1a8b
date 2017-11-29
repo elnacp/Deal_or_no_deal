@@ -62,10 +62,6 @@ textarea{
 	border: 0px solid white;
 }
 
-#selector{
-	border: 2px solid yellow;
-}
-
 #chests{
 	
 	margin: none;

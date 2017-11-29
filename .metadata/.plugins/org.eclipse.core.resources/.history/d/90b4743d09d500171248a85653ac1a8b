@@ -15,7 +15,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <script src="js/main.js"></script>
-    
 </head>
 
 <body>
@@ -42,36 +41,36 @@
     		<div class="col-md-8">
     		
     			<div id="chests" class= "row">
-					<input type="image"  class ="image-chest" id="selector" name="1" src="./img/chests/1.png"  />
-					<input type="image"  class ="image-chest" id="" name="2" src="./img/chests/2.png"  />
-					<input type="image"  class ="image-chest" id="" name="3" src="./img/chests/3.png"  />
-					<input type="image"  class ="image-chest" id="" name="4" src="./img/chests/4.png"  />
-					<input type="image"  class ="image-chest" id="" name="5" src="./img/chests/5.png"  />
-					<input type="image"  class ="image-chest" id="" name="6" src="./img/chests/6.png"  />
+					<input type="image"  class ="image-chest" id="1" src="./img/chests/1.png"  />
+					<input type="image"  class ="image-chest" id="2" src="./img/chests/2.png"  />
+					<input type="image"  class ="image-chest" id="3" src="./img/chests/3.png"  />
+					<input type="image"  class ="image-chest" id="4" src="./img/chests/4.png"  />
+					<input type="image"  class ="image-chest" id="5" src="./img/chests/5.png"  />
+					<input type="image"  class ="image-chest" id="6" src="./img/chests/6.png"  />
 				</div>
 				<div id="chests" class= "row">
-					<input type="image"  class ="image-chest" id="" name="7" src="./img/chests/7.png"   />
-					<input type="image"  class ="image-chest" id="" name="8" src="./img/chests/8.png"   />
-					<input type="image"  class ="image-chest" id="" name="9" src="./img/chests/9.png"   />
-					<input type="image"  class ="image-chest" id="" name="10" src="./img/chests/10.png"  />
-					<input type="image"  class ="image-chest" id="" name="11" src="./img/chests/11.png"  />
-					<input type="image"  class ="image-chest" id="" name="12" src="./img/chests/12.png"  />
+					<input type="image"  class ="image-chest" id="7" src="./img/chests/7.png"   />
+					<input type="image"  class ="image-chest" id="8" src="./img/chests/8.png"   />
+					<input type="image"  class ="image-chest" id="9" src="./img/chests/9.png"   />
+					<input type="image"  class ="image-chest" id="10" src="./img/chests/10.png"  />
+					<input type="image"  class ="image-chest" id="11" src="./img/chests/11.png"  />
+					<input type="image"  class ="image-chest" id="12" src="./img/chests/12.png"  />
 				</div>
 				<div id="chests" class= "row">
-					<input type="image"  class ="image-chest" id="" name="13" src="./img/chests/13.png"  />
-					<input type="image"  class ="image-chest" id="" name="14" src="./img/chests/14.png"  />
-					<input type="image"  class ="image-chest" id="" name="15" src="./img/chests/15.png"  />
-					<input type="image"  class ="image-chest" id="" name="16" src="./img/chests/16.png"  />
-					<input type="image"  class ="image-chest" id="" name="17" src="./img/chests/17.png"  />
-					<input type="image"  class ="image-chest" id="" name="18" src="./img/chests/18.png"  />
+					<input type="image"  class ="image-chest" id="13" src="./img/chests/13.png"  />
+					<input type="image"  class ="image-chest" id="14" src="./img/chests/14.png"  />
+					<input type="image"  class ="image-chest" id="15" src="./img/chests/15.png"  />
+					<input type="image"  class ="image-chest" id="16" src="./img/chests/16.png"  />
+					<input type="image"  class ="image-chest" id="17" src="./img/chests/17.png"  />
+					<input type="image"  class ="image-chest" id="18" src="./img/chests/18.png"  />
 				</div>
 				<div id="chests" class= "row">
-					<input type="image"  class ="image-chest" name="19" src="./img/chests/19.png"  />
-					<input type="image"  class ="image-chest" name="20" src="./img/chests/20.png"  />
-					<input type="image"  class ="image-chest" name="21" src="./img/chests/21.png"  />
-					<input type="image"  class ="image-chest" name="22" src="./img/chests/22.png"  />
-					<input type="image"  class ="image-chest" name="23" src="./img/chests/23.png"  />
-					<input type="image"  class ="image-chest" name="24" src="./img/chests/24.png"  />
+					<input type="image"  class ="image-chest" id="19" src="./img/chests/19.png"  />
+					<input type="image"  class ="image-chest" id="20" src="./img/chests/20.png"  />
+					<input type="image"  class ="image-chest" id="21" src="./img/chests/21.png"  />
+					<input type="image"  class ="image-chest" id="22" src="./img/chests/22.png"  />
+					<input type="image"  class ="image-chest" id="23" src="./img/chests/23.png"  />
+					<input type="image"  class ="image-chest" id="24" src="./img/chests/24.png"  />
 				</div>
     		
     		</div>
@@ -101,7 +100,7 @@
  		 		<input type="image" id="user_chest" src="./img/chest_user.png"/>
  		  </div>
 	</div>
-	 <script src="js/chestController.js"></script>
+	 
 </body>
 
 </html>

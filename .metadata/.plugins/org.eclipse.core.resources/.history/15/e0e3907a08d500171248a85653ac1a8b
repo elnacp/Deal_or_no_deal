@@ -59,11 +59,7 @@ textarea{
 	
 	max-width:200px;
 	max-height:150px;
-	border: 0px solid white;
-}
-
-#selector{
-	border: 2px solid yellow;
+	border: 4px solid white;
 }
 
 #chests{

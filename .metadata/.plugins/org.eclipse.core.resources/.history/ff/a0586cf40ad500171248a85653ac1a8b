@@ -1,0 +1,18 @@
+
+window.onload = function () {
+    // TODO:: Do your initialization job
+
+    // add eventListener for tizenhwkey
+    document.addEventListener('tizenhwkey', function(e) {
+        if(e.keyName == "back")
+	try {
+	    tizen.application.getCurrentApplication().exit();
+	} catch (ignore) {
+	}
+    });
+
+    
+    var selector = document.getElementById("1");
+    selector.style.border = "2px solid yellow";
+   
+};
