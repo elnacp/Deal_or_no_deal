@@ -66,12 +66,12 @@
 					<input type="image"  class ="image-chest" id="" name="18" src="./img/chests/18.png"  />
 				</div>
 				<div id="chests" class= "row">
-					<input type="image"  class ="image-chest" name="19" src="./img/chests/19.png"  />
-					<input type="image"  class ="image-chest" name="20" src="./img/chests/20.png"  />
-					<input type="image"  class ="image-chest" name="21" src="./img/chests/21.png"  />
-					<input type="image"  class ="image-chest" name="22" src="./img/chests/22.png"  />
-					<input type="image"  class ="image-chest" name="23" src="./img/chests/23.png"  />
-					<input type="image"  class ="image-chest" name="24" src="./img/chests/24.png"  />
+					<input type="image"  class ="image-chest" name="19" src="./img/chests/19.png"  x="1" y="4"/>
+					<input type="image"  class ="image-chest" name="20" src="./img/chests/20.png"  x="2" y="4"/>
+					<input type="image"  class ="image-chest" name="21" src="./img/chests/21.png"  x="3" y="4"/>
+					<input type="image"  class ="image-chest" name="22" src="./img/chests/22.png"  x="4" y="4"/>
+					<input type="image"  class ="image-chest" name="23" src="./img/chests/23.png"  x="5" y="4"/>
+					<input type="image"  class ="image-chest" name="24" src="./img/chests/24.png"  x="6" y="4"/>
 				</div>
     		
     		</div>
