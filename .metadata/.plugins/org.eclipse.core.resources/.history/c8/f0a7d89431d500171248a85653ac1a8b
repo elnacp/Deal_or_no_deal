@@ -6,15 +6,17 @@ function changeSelector(selector, up, down, right, left){
 		if( selector.name == i){
 			if( up == 1){
 				num = parseInt(selector.name)-6;
-				if( num > 0 && num < 25){
+				if( num > 1 && num < 25){
+					
 					var aux = document.getElementsByName(num);
+					if( aux.src == "./img/chestAgafat")
 					aux[0].id = 'selector';
 					selector.id = "";
 				}
 			}
 			if( down == 1){
 				num = parseInt(selector.name)+6;
-				if( num > 0 && num < 25){
+				if( num > 1 && num < 25){
 					var aux = document.getElementsByName(num);
 					aux[0].id = 'selector';
 					selector.id = "";
