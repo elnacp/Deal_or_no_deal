@@ -58,9 +58,9 @@ function cofreUsuari(cofreSeleccionat){
 		num = 1; 
 	}
 	var aux = document.getElementsByName(num);
-	$('#selector').hide();
+	$('selector').hide();
 	aux[0].id = 'selector';
-	//cofre.id = "";
+	cofre.id = "";
 	
 	
 	

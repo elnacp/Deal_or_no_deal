@@ -49,7 +49,6 @@ window.onload = function () {
     	if(e.keyCode == 13 && seleccionat == 0){   // El primer ok es per seleccionar cofre
     		cofreUsuari(cofreSeleccionat);
     		seleccionat = 1;
-
     	}
     	
     	

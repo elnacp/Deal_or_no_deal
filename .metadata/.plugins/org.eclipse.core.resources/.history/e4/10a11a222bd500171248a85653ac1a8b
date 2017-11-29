@@ -47,9 +47,10 @@ window.onload = function () {
     
     document.addEventListener("keydown", function(e){
     	if(e.keyCode == 13 && seleccionat == 0){   // El primer ok es per seleccionar cofre
-    		cofreUsuari(cofreSeleccionat);
-    		seleccionat = 1;
-
+    		var cofre = document.getElementById("selector");
+    		seleccionat = 1; 
+    		cofreSeleccionat = cofre.name;
+ 
     	}
     	
     	

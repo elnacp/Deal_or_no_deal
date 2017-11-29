@@ -47,10 +47,6 @@ function cofreUsuari(cofreSeleccionat){
 	
 	var cofre = document.getElementById("selector");
 	
-	//canviem la imatge del cofre del usuari per el que hagui seleccionat
-	var usuariCofre = document.getElementById("user_chest");
-	usuariCofre.src = cofre.src;
-	
 	//canviem el selector en el primer element de la llista
 	if(parseInt(cofre.name) == 1){   
 		num = 2;
@@ -58,10 +54,11 @@ function cofreUsuari(cofreSeleccionat){
 		num = 1; 
 	}
 	var aux = document.getElementsByName(num);
-	$('#selector').hide();
 	aux[0].id = 'selector';
-	//cofre.id = "";
 	
+	//canviem la imatge del cofre del usuari per el que hagui seleccionat
+	var usuariCofre = document.getElementById("user_chest");
+	usuariCofre.src = cofre.src;
 	
 	
 }

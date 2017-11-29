@@ -7,10 +7,6 @@ window.onload = function () {
 	var left = 0;
 	var cofreSeleccionat = 0; // indica quin cofre es del jugador
 	var seleccionat = 0; //indica si el  cofre ha estat seleccionat (FLAG)
-    var pag = 0;
-    
-    console.log(cofreSeleccionat);
-    console.log(seleccionat);
     
     document.addEventListener('tizenhwkey', function(e) {
         if(e.keyName == "back")
@@ -43,16 +39,6 @@ window.onload = function () {
     	down = 0; 
     	left = 0; 
     	right = 0;
-    });
-    
-    document.addEventListener("keydown", function(e){
-    	if(e.keyCode == 13 && seleccionat == 0){   // El primer ok es per seleccionar cofre
-    		cofreUsuari(cofreSeleccionat);
-    		seleccionat = 1;
-
-    	}
-    	
-    	
     });
     
     
