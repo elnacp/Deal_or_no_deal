@@ -59,8 +59,7 @@ function cofreUsuari(cofreSeleccionat){
 	}
 	var aux = document.getElementsByName(num);
 	aux[0].id = 'selector';
-	cofre.id = "";
-	cofre.src = "./img/chestAgafat.png";
+	//cofre.id = "";
 	
 	
 	
