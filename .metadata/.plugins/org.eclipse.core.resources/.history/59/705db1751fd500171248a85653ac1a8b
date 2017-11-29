@@ -1,0 +1,28 @@
+
+function changeSelector(selector, up, down, right, left){
+	var num = 0;
+	
+	for ( var i = 1; i < 24; i++){
+
+		if( selector.name == i){
+			
+			if( up == 1){
+				if( selector.y != 1){
+					num = parseInt(selector.name)-1;
+					var aux = document.getElementsByName(num);
+					aux[0].id = 'selector';
+					selector.id = "";
+				}
+				//num = parseInt(selector.name) + 1;
+				//var aux = document.getElementsByName(num);
+				//aux[0].id = 'selector';
+				//selector.id = "";
+			}
+		}
+	}
+	
+	
+	
+	
+	
+}

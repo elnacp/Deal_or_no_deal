@@ -4787,3 +4787,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.tizen.common.connection.toolbar.EmulatorLaunchWorker 4 0 2017-11-29 17:12:57.099
+!MESSAGE [2017.11.29 17:12:57][ERROR] EmulatorLaunchWorker.java(73) - Timeout to wait for emulator booting done
+

@@ -5,7 +5,7 @@ function changeSelector(selector, up, down, right, left){
 	for ( var i = 1; i < 25; i++){
 
 		if( selector.name == i){
-				
+				console.log(selector.x);
 				if( up == 1){
 					num = parseInt(selector.name)-6;
 					if( num > 1 && num < 25){

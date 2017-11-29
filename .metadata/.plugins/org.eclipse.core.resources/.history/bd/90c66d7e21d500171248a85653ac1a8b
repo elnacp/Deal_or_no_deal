@@ -5,19 +5,20 @@ function changeSelector(selector, up, down, right, left){
 	for ( var i = 1; i < 25; i++){
 
 		if( selector.name == i){
+			console.log(selector.x);
+			if( up == 1){
 				
-				if( up == 1){
-					num = parseInt(selector.name)-6;
-					if( num > 1 && num < 25){
-						var aux = document.getElementsByName(num);
-						aux[0].id = 'selector';
-						selector.id = "";
-					}
+				num = parseInt(selector.name)-6;
+				if( num  > 1){
+					var aux = document.getElementsByName(num);
+					aux[0].id = 'selector';
+					selector.id = "";
+				}
 			}
 			if( down == 1){
-				num = parseInt(selector.name)+6;
-				if( num > 1 && num < 25){
-					
+				num = parseInt(selector.name)-6;
+				if( num  < 24){
+					num = parseInt(selector.name)+6;
 					var aux = document.getElementsByName(num);
 					aux[0].id = 'selector';
 					selector.id = "";
@@ -26,7 +27,7 @@ function changeSelector(selector, up, down, right, left){
 			}
 			if( right == 1){
 				num = parseInt(selector.name)+1;
-				if(num < 25 ){
+				if(num > 24 )
 					var aux = document.getElementsByName(num);
 					aux[0].id = 'selector';
 					selector.id = "";
@@ -35,7 +36,7 @@ function changeSelector(selector, up, down, right, left){
 			}
 			if( left == 1){
 				num = parseInt(selector.name)-1;
-				if(num > 0 ){
+				if(num < 1 ){
 					var aux = document.getElementsByName(num);
 					aux[0].id = 'selector';
 					selector.id = "";
@@ -43,4 +44,9 @@ function changeSelector(selector, up, down, right, left){
 			}
 		}
 	}
+	
+	
+	
+	
+	
 }
