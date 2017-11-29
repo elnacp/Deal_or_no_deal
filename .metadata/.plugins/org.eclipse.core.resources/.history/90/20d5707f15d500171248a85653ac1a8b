@@ -1,0 +1,13 @@
+
+function changeSelector(selector, up, down, right, left){
+	
+	for ( var i = 0; i < 24; i++){
+		
+		
+		
+	}
+	
+	
+	
+	
+}

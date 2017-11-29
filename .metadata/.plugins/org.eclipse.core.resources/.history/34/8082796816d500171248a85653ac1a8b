@@ -7,12 +7,13 @@ function changeSelector(selector, up, down, right, left){
 		if( selector.name == i){
 			console.log("heeeu");
 			if( up == 1){
-				//console.log(selector.name);
-				num = parseInt(selector.name) + 1;
+				console.log(selector.name);
+				num = int(selector.name) + 1;
+				console.log(num);
 				var aux = document.getElementsByName(num);
-				aux[0].id = 'selector';
+				aux.id = "selector";
 				selector.id = "";
-				
+				break;
 			}
 		}
 		

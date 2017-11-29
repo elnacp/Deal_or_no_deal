@@ -8,11 +8,12 @@ function changeSelector(selector, up, down, right, left){
 			console.log("heeeu");
 			if( up == 1){
 				//console.log(selector.name);
-				num = parseInt(selector.name) + 1;
+				num = Integer.parseInt(selector.name) + 1;
+				console.log(num);
 				var aux = document.getElementsByName(num);
-				aux[0].id = 'selector';
+				aux.id = "selector";
 				selector.id = "";
-				
+				break;
 			}
 		}
 		

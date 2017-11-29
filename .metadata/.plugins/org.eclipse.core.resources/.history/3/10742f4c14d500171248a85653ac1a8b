@@ -36,10 +36,7 @@ window.onload = function () {
     	}
     	
     	changeSelector(selector, up, down, right, left);
-    	up = 0; 
-    	down = 0; 
-    	left = 0; 
-    	right = 0;
+    	
     	
     	
     });
