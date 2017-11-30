@@ -1,6 +1,7 @@
-// cursor que es mou per els cofres
+
 function changeSelector(selector, up, down, right, left){
 	var num = 0;
+	
 	for ( var i = 1; i < 25; i++){
 		if( selector.name == i){
 			if( up == 1){
@@ -40,7 +41,7 @@ function changeSelector(selector, up, down, right, left){
 }
 
 
-// Agafa el cofre que el usuari ha escollit
+
 function cofreUsuari(cofreSeleccionat){
 	var num = 0; 
 	
@@ -63,14 +64,8 @@ function cofreUsuari(cofreSeleccionat){
 
 }
 
-//obre els cofres que ha seleccionat el usuari que vol descartar
-function obrirCofreSeleccionat(){
-	var cofre = document.getElementById("selector");
-	if( cofre.getAttribute("src") != "./img/chestAgafat.png" ){
-		if(cofre.getAttribute("src")!= "./img/caja_abierta.png"){
-			cofre.src = "./img/caja_abierta.png";
-		}
-	}
+
+function eliminarPremi(){
 	
 }
 	

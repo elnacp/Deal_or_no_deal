@@ -10,6 +10,8 @@ window.onload = function () {
     var pag = 0;
     var lalal = {};
     
+    console.log(cofreSeleccionat);
+    console.log(seleccionat);
     
     document.addEventListener('tizenhwkey', function(e) {
         if(e.keyName == "back")

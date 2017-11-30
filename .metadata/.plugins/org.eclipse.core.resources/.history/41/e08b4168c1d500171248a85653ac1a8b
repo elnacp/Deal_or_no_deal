@@ -63,14 +63,17 @@ function cofreUsuari(cofreSeleccionat){
 
 }
 
-//obre els cofres que ha seleccionat el usuari que vol descartar
+//
 function obrirCofreSeleccionat(){
 	var cofre = document.getElementById("selector");
-	if( cofre.getAttribute("src") != "./img/chestAgafat.png" ){
-		if(cofre.getAttribute("src")!= "./img/caja_abierta.png"){
-			cofre.src = "./img/caja_abierta.png";
-		}
+	//if( cofre.src != "./img/chestAgafat.png" ){
+		//if(cofre.src != "./img/caja_abierta.png"){
+			//console.log(cofre);
+			//cofre.src = "./img/caja_abierta.png";
+	//	}
+	//}
+	if(strcmp(cofre.src, "./img/chestAgafat.png")){
+		console.log("hello");
 	}
-	
 }
 	

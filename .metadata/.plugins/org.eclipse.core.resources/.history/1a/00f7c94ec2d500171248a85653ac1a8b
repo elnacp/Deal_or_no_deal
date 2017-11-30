@@ -8,8 +8,9 @@ window.onload = function () {
 	var cofreSeleccionat = 0; // indica quin cofre es del jugador
 	var seleccionat = 0; //indica si el  cofre ha estat seleccionat (FLAG)
     var pag = 0;
-    var lalal = {};
     
+    console.log(cofreSeleccionat);
+    console.log(seleccionat);
     
     document.addEventListener('tizenhwkey', function(e) {
         if(e.keyName == "back")

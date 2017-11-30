@@ -63,7 +63,7 @@ function cofreUsuari(cofreSeleccionat){
 
 }
 
-//obre els cofres que ha seleccionat el usuari que vol descartar
+//
 function obrirCofreSeleccionat(){
 	var cofre = document.getElementById("selector");
 	if( cofre.getAttribute("src") != "./img/chestAgafat.png" ){

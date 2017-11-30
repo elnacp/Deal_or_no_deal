@@ -63,14 +63,14 @@ function cofreUsuari(cofreSeleccionat){
 
 }
 
-//obre els cofres que ha seleccionat el usuari que vol descartar
+//
 function obrirCofreSeleccionat(){
 	var cofre = document.getElementById("selector");
-	if( cofre.getAttribute("src") != "./img/chestAgafat.png" ){
-		if(cofre.getAttribute("src")!= "./img/caja_abierta.png"){
+	if( cofre[0].src != "./img/chestAgafat.png" ){
+		if(cofre[0].src != "./img/caja_abierta.png"){
+			console.log(cofre[0].src);
 			cofre.src = "./img/caja_abierta.png";
 		}
 	}
-	
 }
 	
