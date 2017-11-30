@@ -13,7 +13,7 @@ window.onload = function () {
     
     
     valors = ["0,01€", "0,5€", "1€","5€", "10€", "30€", "50€", "70€", "100€", "300€", "500€", "1000€",
-              "1300€", "1500€", "3000€", "5000€", "10.000€", "30.000€", "50.000€", "70.000€", "100.000€", "300.000€", "500.000€", "1.000.000€" ];
+              "1300€", "1500€", "3000€", "5000€", "10.000€", "30.000€", "50.000€", "70.000€", "100.000€", "300.000€", "50.000€", "1.000.000€" ];
     
     shuffle(valors);
     
@@ -28,9 +28,15 @@ window.onload = function () {
         }
     }
     
-    console.log(valors);
     
-   
+    
+    document.addEventListener('tizenhwkey', function(e) {
+        if(e.keyName == "back")
+	try {
+	    tizen.application.getCurrentApplication().exit();
+	} catch (ignore) {
+	}
+    });
 
     //MOURE EL CURSOR PER SOBRE DE TOTS ELS COFRES
     document.addEventListener("keydown", function(e){

@@ -26,11 +26,18 @@ window.onload = function () {
             a[j] = x;
     
         }
+        console.log(a)
     }
     
     console.log(valors);
     
-   
+    document.addEventListener('tizenhwkey', function(e) {
+        if(e.keyName == "back")
+	try {
+	    tizen.application.getCurrentApplication().exit();
+	} catch (ignore) {
+	}
+    });
 
     //MOURE EL CURSOR PER SOBRE DE TOTS ELS COFRES
     document.addEventListener("keydown", function(e){
