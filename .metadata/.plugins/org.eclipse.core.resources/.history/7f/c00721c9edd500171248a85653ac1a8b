@@ -73,10 +73,10 @@ function obrirCofreSeleccionat(valors, valorsOberts){
 			var textarea = document.getElementById("message");
 			textarea.value = "The chest content: " + valors[0]+ "€"; // substitueix el contingut de text area
 			//var prizes = document.getElementByName("first");
-			value = "./img/prizes/"+valors[0]+".png";
+			value = valors[0];
 			//console.log($("[src='"+value+"'"));
-			var prize = document.querySelectorAll('[src="'+value+'"]');
-			prize[0].src = "./img/dinerAgafat.png";
+			var prize = document.querySelectorAll('[src='+value+']');
+			console.log(prize);
 			valors.splice(0,1);// elimina el valor de array valor
 		}
 	}

@@ -76,7 +76,7 @@ function obrirCofreSeleccionat(valors, valorsOberts){
 			value = "./img/prizes/"+valors[0]+".png";
 			//console.log($("[src='"+value+"'"));
 			var prize = document.querySelectorAll('[src="'+value+'"]');
-			prize[0].src = "./img/dinerAgafat.png";
+			console.log(prize);
 			valors.splice(0,1);// elimina el valor de array valor
 		}
 	}

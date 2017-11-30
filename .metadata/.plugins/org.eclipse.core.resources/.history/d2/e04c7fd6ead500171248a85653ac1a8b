@@ -24,7 +24,7 @@
 		<div class="row">
    			<div class="col-md-2">
    				
-					<input type="image"  id ="prizes"  name="first" src="./img/prizes/0,01.png"   />
+					<input type="image"  id ="prizes" src="./img/prizes/0,01.png"   />
 					<input type="image"  id ="prizes" src="./img/prizes/0,5.png"   />
 					<input type="image"  id ="prizes" src="./img/prizes/1.png"  	/>
 					<input type="image"  id ="prizes" src="./img/prizes/5.png"  	/>
