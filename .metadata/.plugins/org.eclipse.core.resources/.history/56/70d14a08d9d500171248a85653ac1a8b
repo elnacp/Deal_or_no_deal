@@ -59,9 +59,7 @@ window.onload = function () {
     
     document.addEventListener("keydown", function(e){
     	if(e.keyCode == 13 && seleccionat == 1){
-    		obrirCofreSeleccionat(valors, valorsOberts);  //funcio que obre el cofre i ens dona el valor que ha tret 
-    		console.log(valors);
-    		console.log(valorsOberts);
+    		obrirCofreSeleccionat(valors, valorsOberts);
     	}
     	if(e.keyCode == 13 && seleccionat == 0){   // El primer ok es per seleccionar cofre
     		cofreUsuari(cofreSeleccionat);

@@ -8,8 +8,8 @@ window.onload = function () {
 	var cofreSeleccionat = 0; // indica quin cofre es del jugador
 	var seleccionat = 0; //indica si el  cofre ha estat seleccionat (FLAG)
     var pag = 0;
-    var valorsOberts  = [];  // valors de cofres que ja han sortit
-    var valors = []; // tots els valors que poden sortir d'un cofre
+    var valorsOberts  = [];  // numero dels cofres
+    var valors = [];
     
     
     valors = ["0,01€", "0,5€", "1€","5€", "10€", "30€", "50€", "70€", "100€", "300€", "500€", "1000€",
@@ -59,9 +59,7 @@ window.onload = function () {
     
     document.addEventListener("keydown", function(e){
     	if(e.keyCode == 13 && seleccionat == 1){
-    		obrirCofreSeleccionat(valors, valorsOberts);  //funcio que obre el cofre i ens dona el valor que ha tret 
-    		console.log(valors);
-    		console.log(valorsOberts);
+    		obrirCofreSeleccionat(valors, valorsOberts);
     	}
     	if(e.keyCode == 13 && seleccionat == 0){   // El primer ok es per seleccionar cofre
     		cofreUsuari(cofreSeleccionat);
