@@ -66,6 +66,7 @@ function cofreUsuari(cofreSeleccionat){
 //obre els cofres que ha seleccionat el usuari que vol descartar
 function obrirCofreSeleccionat(valors, valorsOberts){
 	var cofre = document.getElementById("selector");
+	var ok = 0;
 	if( cofre.getAttribute("src") != "./img/chestAgafat.png" ){
 		if(cofre.getAttribute("src")!= "./img/caja_abierta.png"){
 			cofre.src = "./img/caja_abierta.png";
@@ -78,8 +79,10 @@ function obrirCofreSeleccionat(valors, valorsOberts){
 			var prize = document.querySelectorAll('[src="'+value+'"]');
 			prize[0].src = "./img/dinerAgafat.png";
 			valors.splice(0,1);// elimina el valor de array valor
+			ok = 1;
 		}
 	}
+	return  ok;
 	
 }
 	

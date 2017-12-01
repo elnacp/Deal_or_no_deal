@@ -10,12 +10,14 @@ window.onload = function () {
     var pag = 0;
     var valorsOberts  = [];  // valors de cofres que ja han sortit
     var valors = []; // tots els valors que poden sortir d'un cofre
-    
+    var torns  = 24; 
     
     valors = ["0,01", "0,5", "1","5", "10", "30", "50", "70", "100", "300", "500", "1000",
-              "1300", "1500", "3000", "5000", "10.000", "30.000", "50.000", "70.000", "100.000", "300.000", "500.000", "1.000.000" ];
+              "1300", "1500", "3000", "5000", "10000", "30000", "50000", "70000", "100000", "300000", "500000", "1000000" ];
     
     shuffle(valors);
+    //$('#pop-up-banquero').hide();
+    
     //barreja array de valors de cada cofre.
     function shuffle(a) {
         var j, x, i;
@@ -28,10 +30,6 @@ window.onload = function () {
         }
     }
     
-    
-    
-   
-
     //MOURE EL CURSOR PER SOBRE DE TOTS ELS COFRES
     document.addEventListener("keydown", function(e){
     	var selector = document.getElementById("selector");
@@ -59,13 +57,21 @@ window.onload = function () {
     
     document.addEventListener("keydown", function(e){
     	if(e.keyCode == 13 && seleccionat == 1){
-    		obrirCofreSeleccionat(valors, valorsOberts);  //funcio que obre el cofre i ens dona el valor que ha tret 
+    		var ok = obrirCofreSeleccionat(valors, valorsOberts);  //funcio que obre el cofre i ens dona el valor que ha tret 
     		//console.log(valors);
     		//console.log(valorsOberts);
+    		if( ok == 1){
+    			torns--;
+    			//console.log("entra");
+    		}
+    		
+    		
+    		banqueroAppears(torns, valors);
     	}
     	if(e.keyCode == 13 && seleccionat == 0){   // El primer ok es per seleccionar cofre
     		cofreUsuari(cofreSeleccionat);
     		seleccionat = 1;
+    		torns--;
     	}
     	
     	

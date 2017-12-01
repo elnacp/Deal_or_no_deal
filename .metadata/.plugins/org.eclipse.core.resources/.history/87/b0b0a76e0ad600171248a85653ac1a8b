@@ -1,0 +1,26 @@
+function banqueroAppears(torns, valors){
+	var aux = 0;
+	var oferta = 0;
+	var quantitat = 0;
+	
+	if( torns == 18 || torns == 13 || torns == 8 || torns == 4 || torns == 3 || torns == 2){  
+		// el banquer et farà una proposta segons els diners que et quedin 
+		for ( var i= 0; i < valors.length; i++){
+			//console.log(parseInt(valors[i]));
+			aux = aux + parseInt(valors[i]);
+			//console.log(aux);
+			quantitat++;
+		}
+		console.log(quantitat);
+		oferta = round(aux / quantitat);
+		// fem la mitja dels valors que li queden 
+		var textarea = document.getElementById("message");
+		textarea.value = "El banquero t'ofereix = " +oferta;
+		
+	}
+	if( torns == 1){  //canviar el cofre que tens per el cofre que queda
+		
+	}
+	
+	
+}

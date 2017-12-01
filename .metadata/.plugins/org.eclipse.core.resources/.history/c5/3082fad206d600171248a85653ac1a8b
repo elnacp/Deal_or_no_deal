@@ -1,0 +1,15 @@
+function banqueroAppears(torns, valors){
+	if( torns == 18 || torns == 13 || torns == 8 || torns == 4 || torns == 3 || torns == 2){  
+		// el banquer et farà una proposta segons els diners que et quedin 
+		var aux = 0;
+		for ( var i= 0; i < valors.length; i++){
+			aux = aux + valors[i];
+		}
+		
+	}
+	if( torns == 1){  //canviar el cofre que tens per el cofre que queda
+		
+	}
+	
+	
+}
