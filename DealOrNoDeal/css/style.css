@@ -22,6 +22,30 @@ body {
 	color:#fff;
 }*/
 
+#banquero{
+	width: 750px; 
+	height: 600px;
+}
+
+#acceptar, #rechazar{
+	width: 200px;
+	height: 200px; 
+}
+
+#acceptar{
+	border: 2px solid yellow;
+}
+
+#message-banquero1{
+	color: white;
+	font-size: 40px;
+}
+#message-banquero2{
+	color: white;
+	font-size: 100px;
+}
+
+
 .col-md-2{
 	margin: auto;
 	border: none;
@@ -49,6 +73,9 @@ textarea{
 	height:400px;
 }
 
+textarea{
+	font-size: 40px;
+}
 
 #prizes{
 	width: 100%;

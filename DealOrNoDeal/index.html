@@ -20,11 +20,11 @@
 
 <body>
 
-	<div class = "container-fluid">
+	  <div class = "container-fluid">
 		<div class="row">
    			<div class="col-md-2">
    				
-					<input type="image"  id ="prizes" src="./img/prizes/0,01.png"   />
+					<input type="image"  id ="prizes"  name="first" src="./img/prizes/0,01.png"   />
 					<input type="image"  id ="prizes" src="./img/prizes/0,5.png"   />
 					<input type="image"  id ="prizes" src="./img/prizes/1.png"  	/>
 					<input type="image"  id ="prizes" src="./img/prizes/5.png"  	/>
@@ -42,7 +42,7 @@
     		<div class="col-md-8">
     		
     			<div id="chests" class= "row">
-					<input type="image"  class ="image-chest" id="" name="1" src="./img/chests/1.png"  />
+					<input type="image"  class ="image-chest" id="selector" name="1" src="./img/chests/1.png"  />
 					<input type="image"  class ="image-chest" id="" name="2" src="./img/chests/2.png"  />
 					<input type="image"  class ="image-chest" id="" name="3" src="./img/chests/3.png"  />
 					<input type="image"  class ="image-chest" id="" name="4" src="./img/chests/4.png"  />
@@ -52,7 +52,7 @@
 				<div id="chests" class= "row">
 					<input type="image"  class ="image-chest" id="" name="7" src="./img/chests/7.png"  />
 					<input type="image"  class ="image-chest" id="" name="8" src="./img/chests/8.png"  />
-					<input type="image"  class ="image-chest" id="selector" name="9" src="./img/chests/9.png" />
+					<input type="image"  class ="image-chest" id="" name="9" src="./img/chests/9.png" />
 					<input type="image"  class ="image-chest" id="" name="10" src="./img/chests/10.png"  />
 					<input type="image"  class ="image-chest" id="" name="11" src="./img/chests/11.png"  />
 					<input type="image"  class ="image-chest" id="" name="12" src="./img/chests/12.png"  />
@@ -82,14 +82,14 @@
 					<input type="image"  id ="prizes" src="./img/prizes/1500.png"   />
 					<input type="image"  id ="prizes" src="./img/prizes/3000.png"  	/>
 					<input type="image"  id ="prizes" src="./img/prizes/5000.png"  	/>
-					<input type="image"  id ="prizes" src="./img/prizes/10.000.png"     />
-					<input type="image"  id ="prizes" src="./img/prizes/30.000.png"     />
-					<input type="image"  id ="prizes" src="./img/prizes/50.000.png"     />
-					<input type="image"  id ="prizes" src="./img/prizes/70.000.png"     />
-					<input type="image"  id ="prizes" src="./img/prizes/100.000.png"    />
-					<input type="image"  id ="prizes" src="./img/prizes/300.000.png"    />
-					<input type="image"  id ="prizes" src="./img/prizes/500.000.png"    />
-					<input type="image"  id ="prizes" src="./img/prizes/1.000.000.png"    />
+					<input type="image"  id ="prizes" src="./img/prizes/10000.png"     />
+					<input type="image"  id ="prizes" src="./img/prizes/30000.png"     />
+					<input type="image"  id ="prizes" src="./img/prizes/50000.png"     />
+					<input type="image"  id ="prizes" src="./img/prizes/70000.png"     />
+					<input type="image"  id ="prizes" src="./img/prizes/100000.png"    />
+					<input type="image"  id ="prizes" src="./img/prizes/300000.png"    />
+					<input type="image"  id ="prizes" src="./img/prizes/500000.png"    />
+					<input type="image"  id ="prizes" src="./img/prizes/1000000.png"    />
 			
    		 	
    		 	</div>
@@ -97,11 +97,24 @@
  		 
  		 <div class="row">
  		 		<input type="image" id="presenter" src="./img/banquero_propuesta.jpg"/>
- 		 		<textarea rows="4" cols="6">HELLO!</textarea>  
- 		 		<input type="image" id="user_chest" src="./img/chest_user.png"/>
- 		  </div>
+ 		 		<textarea id="message" rows="4" cols="6" readonly>HELLO!</textarea>  
+ 		 		<input type="image" id="user_chest" src="./img/chestAgafat.png"/>
+ 		  </div> 
+ 		  
+ 		  
+ 		  
 	</div>
+	<div id="pop-up-banquero">
+ 		 		<p id="message-banquero1"  class="row"> El banquero ofrece un intercambio de: <p id="message-banquero2"  class="row"> 10000€ </p> </p>
+ 		 		<input type="image"  id ="banquero" src="./img/welcome.jpg"   class="row"  />
+ 		 		<div class="row">
+	 		 		<input type="image"  id ="acceptar" src="./img/acceptar.png"    />
+	 		 		<input type="image"  id ="rechazar" src="./img/rechazar.png"    />	
+ 		 		</div>
+ 		 		
+ 		  </div>
 	 <script src="js/chestController.js"></script>
+	  <script src="js/banqueroController.js"></script>
 </body>
 
 </html>
