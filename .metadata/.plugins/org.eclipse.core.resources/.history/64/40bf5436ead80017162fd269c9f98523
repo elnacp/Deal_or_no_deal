@@ -35,7 +35,7 @@ window.onload = function () {
     //MOURE EL CURSOR PER SOBRE DE TOTS ELS COFRES
     document.addEventListener("keydown", function(e){
     	var selector = document.getElementById("selector");
-    	//console.log("actiu en fletxes" +actiu);
+    	console.log("actiu en fletxes" +actiu);
     	switch(e.keyCode){
 			case 38:  //UP
 				up = 1;
@@ -63,7 +63,7 @@ window.onload = function () {
     });
     
     document.addEventListener("keydown", function(e){
-    	//console.log("actiu OK" + actiu);
+    	console.log("actiu OK" + actiu);
     	if(e.keyCode == 13 && seleccionat == 1 && actiu == 0){
     		
     		var ok = obrirCofreSeleccionat(valors, valorsOberts);  //funcio que obre el cofre i ens dona el valor que ha tret 

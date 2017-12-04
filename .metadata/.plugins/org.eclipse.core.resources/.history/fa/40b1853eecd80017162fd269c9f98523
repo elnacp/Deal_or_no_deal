@@ -35,7 +35,7 @@ function banqueroAppears(torns, valors){
 	return actiu;
 }
 
-//canviar el selector dintre del pop up i es situa segons si vol "acceptar o rechazar" la oferta
+//canviar el selector dintre del pop up i es situa segons si vol acceptar o rechazar la oferta
 function changeSelectorPopup(right, left){
 	
 	var element = document.getElementById("selectorPopup");

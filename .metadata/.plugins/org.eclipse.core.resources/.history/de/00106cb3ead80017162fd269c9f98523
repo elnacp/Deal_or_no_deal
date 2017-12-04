@@ -43,7 +43,7 @@ body {
 	height: 200px; 
 }
 
-#selectorPopup{
+.acceptar{
 	border: 2px solid yellow;
 }
 

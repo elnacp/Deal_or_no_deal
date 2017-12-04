@@ -108,7 +108,7 @@
  		 		<p id="message-banquero1"  class="row"> El banquero ofrece un intercambio de: <p id="message-banquero2"  class="row"> 10000€ </p> </p>
  		 		<input type="image"  id ="banquero" src="./img/welcome.jpg"   class="row"  />
  		 		<div class="row">
-	 		 		<input type="image"  class ="acceptar" id="selectorPopup" name="acceptar" src="./img/acceptar.png"    />
+	 		 		<input type="image"  class ="acceptar" id="selectorPopup" src="./img/acceptar.png"    />
 	 		 		<input type="image"  class ="rechazar" id="" name="rechazar" src="./img/rechazar.png"    />	
  		 		</div>
  		 		

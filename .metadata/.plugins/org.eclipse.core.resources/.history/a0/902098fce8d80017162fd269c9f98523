@@ -38,12 +38,12 @@ body {
 	height: 600px;
 }
 
-.acceptar, .rechazar{
+#acceptar, #rechazar{
 	width: 200px;
 	height: 200px; 
 }
 
-#selectorPopup{
+#acceptar{
 	border: 2px solid yellow;
 }
 

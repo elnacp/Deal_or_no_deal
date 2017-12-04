@@ -35,19 +35,28 @@ function banqueroAppears(torns, valors){
 	return actiu;
 }
 
-//canviar el selector dintre del pop up i es situa segons si vol "acceptar o rechazar" la oferta
+
 function changeSelectorPopup(right, left){
 	
 	var element = document.getElementById("selectorPopup");
 	var selector = document.getElementById("selectorPopup").className;
+	console.log(selector);
+	console.log(right);
+	console.log(left);
 	if(selector == "acceptar" && right == 1){
+		console.log("selector1");
 		var aux = document.getElementsByName("rechazar");
 		aux[0].id = "selectorPopup";
-		element.id ="";
+		
+		console.log("aux" +aux);
 	}
 	if(selector == "rechazar" && left == 1){
+		console.log("selector2");
 		var aux = document.getElementsByName("acceptar");
 		aux[0].id = "selectorPopup";
-		element.id = "";
+		
+		console.log("aux" +aux);
+		
 	}
+	
 }
