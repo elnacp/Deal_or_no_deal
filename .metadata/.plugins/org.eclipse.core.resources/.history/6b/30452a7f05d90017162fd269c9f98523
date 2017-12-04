@@ -93,6 +93,7 @@ window.onload = function () {
     		}
     		//retorna si esta actiu el popup dels torns
     		actiu = banqueroAppears(torns, valors); 
+    		break;
     	}
     	
     	

@@ -12,7 +12,6 @@ window.onload = function () {
     var valors = []; // tots els valors que poden sortir d'un cofre
     var torns  = 24; 
     var actiu = 0;
-    var fiJoc = 0;
     
     
     valors = ["0,01", "0,5", "1","5", "10", "30", "50", "70", "100", "300", "500", "1000",
@@ -33,7 +32,7 @@ window.onload = function () {
         }
     }
     
-    //CONTROLA TOTES LES FUNCIONES AMB LES TECLES
+    //MOURE EL CURSOR PER SOBRE DE TOTS ELS COFRES
     document.addEventListener("keydown", function(e){
     	var selector = document.getElementById("selector");
     	//console.log("actiu en fletxes" +actiu);
@@ -57,34 +56,14 @@ window.onload = function () {
     	if( actiu == 1){
     		changeSelectorPopup(right, left);
     	}
-    	
-    	if(actiu == 1 && down == 1){
-    		fiJoc = opcioBanquer();
-    		if(fiJoc == 0){
-    			actiu = 0;
-    			$('#pop-up-banquero').hide();
-    		}
-    	}
     	up = 0; 
     	down = 0; 
     	left = 0; 
     	right = 0;
     });
     
-    
-    
-    //CONTROLA TOTES LES FUNCIONS DEL OK
     document.addEventListener("keydown", function(e){
-    	
-    	/*//funcio que controlara la proposta del banquer
-    	if(e.keyCode == 13 && seleccionat == 1 && actiu == 1){
-    		fiJoc = opcioBanquer();
-    		if(fiJoc == 0){
-    			actiu = 0;
-    			$('#pop-up-banquero').hide();
-    		}
-    	}*/
-    	
+
     	//funcio que selecciona els cofres que es van descartant en partida
     	if(e.keyCode == 13 && seleccionat == 1 && actiu == 0){
     		var ok = obrirCofreSeleccionat(valors, valorsOberts); 
@@ -92,22 +71,22 @@ window.onload = function () {
     			torns--;;
     		}
     		//retorna si esta actiu el popup dels torns
-    		actiu = banqueroAppears(torns, valors); 
+    		actiu = banqueroAppears(torns, valors);
     	}
-    	
-    	
-    	
     	//funcio que selecciona el cofre del usuari en el torn 1
-    	if(e.keyCode == 13 && seleccionat == 0 && actiu == 0){  
+    	if(e.keyCode == 13 && seleccionat == 0 && actiu == 0){   // El primer ok es per seleccionar cofre
     		cofreUsuari(cofreSeleccionat);
     		seleccionat = 1;
     		torns--;
     	}
     	
+  
     	
     	
     });
-
+    
+    
+   
 };
 
 

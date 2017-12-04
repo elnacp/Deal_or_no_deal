@@ -49,12 +49,16 @@ function changeSelectorPopup(right, left){
 
 function opcioBanquer(){
 	var fiJoc = 0; // defineix si el joc ha acabat 
+	
 	var opcio = document.getElementById("selectorPopup").className;
+	
 	if( opcio == "acceptar"){ // el joc finalitza
 		fiJoc = 1; 
 	}
 	if(opcio == "rechazar"){ // el joc continua
 		fiJoc = 0; 
+		
 	}
+	
 	return fiJoc; 
 }

@@ -57,14 +57,6 @@ window.onload = function () {
     	if( actiu == 1){
     		changeSelectorPopup(right, left);
     	}
-    	
-    	if(actiu == 1 && down == 1){
-    		fiJoc = opcioBanquer();
-    		if(fiJoc == 0){
-    			actiu = 0;
-    			$('#pop-up-banquero').hide();
-    		}
-    	}
     	up = 0; 
     	down = 0; 
     	left = 0; 
@@ -76,14 +68,14 @@ window.onload = function () {
     //CONTROLA TOTES LES FUNCIONS DEL OK
     document.addEventListener("keydown", function(e){
     	
-    	/*//funcio que controlara la proposta del banquer
+    	//funcio que controlara la proposta del banquer
     	if(e.keyCode == 13 && seleccionat == 1 && actiu == 1){
     		fiJoc = opcioBanquer();
     		if(fiJoc == 0){
     			actiu = 0;
     			$('#pop-up-banquero').hide();
     		}
-    	}*/
+    	}
     	
     	//funcio que selecciona els cofres que es van descartant en partida
     	if(e.keyCode == 13 && seleccionat == 1 && actiu == 0){

@@ -5,15 +5,20 @@ function banqueroAppears(torns, valors){
 	var actiu = 0;
 	
 	if( torns == 18 || torns == 13 || torns == 8 || torns == 4 || torns == 3 || torns == 2){  
-		console.log("ENTRO");
-		
 		// el banquer et farà una proposta segons els diners que et quedin 
 		for ( var i= 0; i < valors.length; i++){
+			//console.log(parseInt(valors[i]));
 			aux = aux + parseInt(valors[i]);
+			//console.log(aux);
 			quantitat++;
 		}
+		//console.log(aux);
+		//console.log(valors.length);
 		oferta =aux / valors.length;
 		oferta = Math.round(oferta);
+		//console.log("oferta" + oferta);
+		// fem la mitja dels valors que li queden 
+		/*$('.container-fluid').hide();*/
 		$('#pop-up-banquero').show();
 		var popup = document.getElementById("message-banquero2");
 		popup.innerHTML = oferta + "€";
@@ -47,14 +52,19 @@ function changeSelectorPopup(right, left){
 }
 
 
-function opcioBanquer(){
+function opcioBanquer(actiu){
 	var fiJoc = 0; // defineix si el joc ha acabat 
+	
 	var opcio = document.getElementById("selectorPopup").className;
+	
 	if( opcio == "acceptar"){ // el joc finalitza
 		fiJoc = 1; 
-	}
-	if(opcio == "rechazar"){ // el joc continua
+	}else{   // el joc continua
 		fiJoc = 0; 
+		actiu = 0;
+		$('#pop-up-banquero').hide();
+		
 	}
+	
 	return fiJoc; 
 }
