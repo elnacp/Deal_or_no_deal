@@ -8,6 +8,8 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="presenter"/>
+			<item value="console.log"/>
 			<item value="icon.png"/>
 		</list>
 		<list key="replacehistory">

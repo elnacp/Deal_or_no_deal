@@ -11,12 +11,14 @@ window.onload = function () {
     var valorsOberts  = [];  // valors de cofres que ja han sortit
     var valors = []; // tots els valors que poden sortir d'un cofre
     var torns  = 24; 
+    var actiu = 0;
+    
     
     valors = ["0,01", "0,5", "1","5", "10", "30", "50", "70", "100", "300", "500", "1000",
               "1300", "1500", "3000", "5000", "10000", "30000", "50000", "70000", "100000", "300000", "500000", "1000000" ];
     
     shuffle(valors);
-    //$('#pop-up-banquero').hide();
+    $('#pop-up-banquero').hide();
     
     //barreja array de valors de cada cofre.
     function shuffle(a) {
@@ -33,6 +35,7 @@ window.onload = function () {
     //MOURE EL CURSOR PER SOBRE DE TOTS ELS COFRES
     document.addEventListener("keydown", function(e){
     	var selector = document.getElementById("selector");
+    	console.log("actiu en fletxes" +actiu);
     	switch(e.keyCode){
 			case 38:  //UP
 				up = 1;
@@ -47,8 +50,9 @@ window.onload = function () {
 				down = 1;
 				break;
     	}
-    	
-    	changeSelector(selector, up, down, right, left);
+    	if(actiu == 0){
+    		changeSelector(selector, up, down, right, left);
+    	}
     	up = 0; 
     	down = 0; 
     	left = 0; 
@@ -56,7 +60,9 @@ window.onload = function () {
     });
     
     document.addEventListener("keydown", function(e){
-    	if(e.keyCode == 13 && seleccionat == 1){
+    	console.log("actiu OK" + actiu);
+    	if(e.keyCode == 13 && seleccionat == 1 && actiu == 0){
+    		
     		var ok = obrirCofreSeleccionat(valors, valorsOberts);  //funcio que obre el cofre i ens dona el valor que ha tret 
     		//console.log(valors);
     		//console.log(valorsOberts);
@@ -66,9 +72,9 @@ window.onload = function () {
     		}
     		
     		
-    		banqueroAppears(torns, valors);
+    		actiu = banqueroAppears(torns, valors);
     	}
-    	if(e.keyCode == 13 && seleccionat == 0){   // El primer ok es per seleccionar cofre
+    	if(e.keyCode == 13 && seleccionat == 0 && actiu == 0){   // El primer ok es per seleccionar cofre
     		cofreUsuari(cofreSeleccionat);
     		seleccionat = 1;
     		torns--;
