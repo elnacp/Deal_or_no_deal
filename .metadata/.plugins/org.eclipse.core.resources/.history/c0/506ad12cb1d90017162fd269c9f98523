@@ -52,14 +52,6 @@ function opcioBanquer(){
 	var opcio = document.getElementById("selectorPopup").className;
 	if( opcio == "acceptar"){ // el joc finalitza
 		fiJoc = 1; 
-		//PANELL DE FI DE JOC, ACEPTA LA OFERTA
-		var oferta = document.getElementById("message-banquero2");
-		//console.log(oferta.innerHTML);
-		$('#acceptaOferta').show();
-		$('#pop-up-banquero').hide();
-		var panel = document.getElementById("oferta");
-		panel.innerHTML = oferta.innerHTML;
-		
 	}
 	if(opcio == "rechazar"){ // el joc continua
 		fiJoc = 0; 

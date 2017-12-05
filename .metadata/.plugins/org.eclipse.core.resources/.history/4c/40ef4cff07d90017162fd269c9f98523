@@ -4,7 +4,7 @@ function banqueroAppears(torns, valors){
 	var quantitat = 0;
 	var actiu = 0;
 	
-	if( torns == 18 || torns == 13 || torns == 8 || torns == 4 || torns == 2){  
+	if( torns == 18 || torns == 13 || torns == 8 || torns == 4 || torns == 3 || torns == 2){  
 		console.log("ENTRO");
 		
 		// el banquer et farà una proposta segons els diners que et quedin 
@@ -52,14 +52,6 @@ function opcioBanquer(){
 	var opcio = document.getElementById("selectorPopup").className;
 	if( opcio == "acceptar"){ // el joc finalitza
 		fiJoc = 1; 
-		//PANELL DE FI DE JOC, ACEPTA LA OFERTA
-		var oferta = document.getElementById("message-banquero2");
-		//console.log(oferta.innerHTML);
-		$('#acceptaOferta').show();
-		$('#pop-up-banquero').hide();
-		var panel = document.getElementById("oferta");
-		panel.innerHTML = oferta.innerHTML;
-		
 	}
 	if(opcio == "rechazar"){ // el joc continua
 		fiJoc = 0; 

@@ -55,8 +55,6 @@ function opcioBanquer(){
 		//PANELL DE FI DE JOC, ACEPTA LA OFERTA
 		var oferta = document.getElementById("message-banquero2");
 		//console.log(oferta.innerHTML);
-		$('#acceptaOferta').show();
-		$('#pop-up-banquero').hide();
 		var panel = document.getElementById("oferta");
 		panel.innerHTML = oferta.innerHTML;
 		

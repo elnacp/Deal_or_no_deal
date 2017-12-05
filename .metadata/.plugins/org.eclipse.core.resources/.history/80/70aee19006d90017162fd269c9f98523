@@ -20,7 +20,6 @@ window.onload = function () {
     
     shuffle(valors);
     $('#pop-up-banquero').hide();
-	$('#acceptaOferta').hide();
     
     //barreja array de valors de cada cofre.
     function shuffle(a) {
@@ -86,6 +85,8 @@ window.onload = function () {
     		//retorna si esta actiu el popup dels torns
     		actiu = banqueroAppears(torns, valors); 
     	}
+    	
+    	
     	
     	//funcio que selecciona el cofre del usuari en el torn 1
     	if(e.keyCode == 13 && seleccionat == 0 && actiu == 0){  
