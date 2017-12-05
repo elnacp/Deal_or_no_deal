@@ -109,9 +109,3 @@ textarea{
 	margin: none;
 	width: 100%;
 }
-
-
-#panel-oferta, #oferta{
-	color: white;
-	font-size: 100px;
-}

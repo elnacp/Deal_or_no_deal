@@ -113,5 +113,5 @@ textarea{
 
 #panel-oferta, #oferta{
 	color: white;
-	font-size: 100px;
+	font-size: 40px;
 }

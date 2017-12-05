@@ -77,11 +77,6 @@ window.onload = function () {
     //CONTROLA TOTES LES FUNCIONS DEL OK
     document.addEventListener("keydown", function(e){
 
-    	//fa un exit del joc quan clica ok i s'aniria a la pantalla principal 
-    	if(e.keyCode == 13 && fiJoc == 1){
-    		
-    	}
-    	
     	//funcio que selecciona els cofres que es van descartant en partida
     	if(e.keyCode == 13 && seleccionat == 1 && actiu == 0){
     		var ok = obrirCofreSeleccionat(valors, valorsOberts); 
@@ -98,7 +93,9 @@ window.onload = function () {
     		seleccionat = 1;
     		torns--;
     	}
-
+    	
+    	
+    	
     });
 
 };

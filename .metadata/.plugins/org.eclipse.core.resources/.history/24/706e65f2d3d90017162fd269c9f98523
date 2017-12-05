@@ -104,7 +104,6 @@
  		  
  		  
 	</div>
-	<!-- PANELL DEL BANQUER -->
 	<div  class="container" id="pop-up-banquero"  >
  		 		<p id="message-banquero1"  class="row"> El banquero ofrece un intercambio de: <p id="message-banquero2"  class="row"> 10000€ </p> </p>
  		 		<input type="image"  id ="banquero" src="./img/welcome.jpg"   class="row"  />
@@ -115,7 +114,6 @@
  		 		
  	</div>
  	
- 	<!-- PANELL DE FINAL DE JOC O ACCEPTAR LA OFERTA -->
  	<div class="container" id="acceptaOferta">
  		<p id="panel-oferta"> HAS GANADO </p> <p id="oferta"> </p> 
  	</div>

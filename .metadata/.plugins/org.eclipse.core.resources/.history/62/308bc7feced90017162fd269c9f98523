@@ -6,41 +6,44 @@ function changeSelector(selector, up, down, right, left){
 			if( up == 1){
 				num = parseInt(selector.name)-6;
 				if( num > 0 && num < 25){
-					canviarSelector(selector, num);
+					var aux = document.getElementsByName(num);
+					aux[0].id = 'selector';
+					selector.id = "";
 				}
 			}
 			if( down == 1){
 				num = parseInt(selector.name)+6;
 				if( num > 0 && num < 25){
-					canviarSelector(selector, num);
+					var aux = document.getElementsByName(num);
+					aux[0].id = 'selector';
+					selector.id = "";
 				}
 			}
 			if( right == 1){
 				num = parseInt(selector.name)+1;
 				if(num < 25 ){
-					canviarSelector(selector, num);
+					var aux = document.getElementsByName(num);
+					aux[0].id = 'selector';
+					selector.id = "";
 				}
 			}
 			if( left == 1){
 				num = parseInt(selector.name)-1;
 				if(num > 0 ){
-					canviarSelector(selector, num);
+					var aux = document.getElementsByName(num);
+					aux[0].id = 'selector';
+					selector.id = "";
 				}
 			}
 		}
 	}
 }
 
-function canviarSelector(selector, num){
-	var aux = document.getElementsByName(num);
-	aux[0].id = 'selector';
-	selector.id = "";
-}
-
 
 // Agafa el cofre que el usuari ha escollit
 function cofreUsuari(cofreSeleccionat){
 	var num = 0; 
+	
 	var cofre = document.getElementById("selector");
 	
 	//canviem la imatge del cofre del usuari per el que hagui seleccionat

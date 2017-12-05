@@ -22,11 +22,8 @@ function banqueroAppears(torns, valors){
 		
 	}
 	if( torns == 1){  //canviar el cofre que tens per el cofre que queda
-		/*var textarea = document.getElementById("message");
-		textarea.value = "Vols canviar el cofre?";*/
-		
-		//PANELL DE VOLS CANVIAR COFRE?
-		
+		var textarea = document.getElementById("message");
+		textarea.value = "Vols canviar el cofre?";
 		actiu = 1;
 	}
 	

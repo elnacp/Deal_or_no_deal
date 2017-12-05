@@ -98,7 +98,9 @@ window.onload = function () {
     		seleccionat = 1;
     		torns--;
     	}
-
+    	
+    	
+    	
     });
 
 };
