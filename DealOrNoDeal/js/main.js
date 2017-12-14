@@ -55,23 +55,33 @@ window.onload = function () {
     	if(actiu == 0){
     		changeSelector(selector, up, down, right, left);
     	}
-    	if( actiu == 1){
-    		changeSelectorPopup(right, left);
-    	}
-    	//quan estas en el popup si cliques cap abaix acceptes o rechazas la proposicio
-    	if(actiu == 1 && down == 1){
-    		fiJoc = opcioBanquer();
-    		if(fiJoc == 0){
-    			actiu = 0;
-    			$('#pop-up-banquero').hide();
-    		}
-    	}
+
     	up = 0; 
     	down = 0; 
     	left = 0; 
     	right = 0;
     });
     
+    
+    document.addEventListener("keydown", function(e){
+    	///quan estas en el popup si cliques cap abaix acceptes o rechazas la proposicio
+    	if(e.keyCode == 404 && actiu == 1){
+    		//rechaza la oferta
+    		fiJoc = 1;
+    		var oferta = document.getElementById("message-banquero2");
+    		//console.log(oferta.innerHTML);
+    		$('#acceptaOferta').show();
+    		$('#pop-up-banquero').hide();
+    		var panel = document.getElementById("oferta");
+    		panel.innerHTML = oferta.innerHTML;
+    	}
+    	if(e.keyCode == 403 && actiu == 1){
+    		fiJoc = 0;
+    		actiu = 0; 
+    		$('#pop-up-banquero').hide();
+    	}
+    	
+    });
     
     
     //CONTROLA TOTES LES FUNCIONS DEL OK

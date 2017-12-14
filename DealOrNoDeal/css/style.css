@@ -43,9 +43,7 @@ body {
 	height: 200px; 
 }
 
-#selectorPopup{
-	border: 2px solid yellow;
-}
+
 
 #message-banquero1{
 	color: white;
@@ -109,6 +107,8 @@ textarea{
 	margin: none;
 	width: 100%;
 }
+
+
 
 
 #panel-oferta, #oferta{
