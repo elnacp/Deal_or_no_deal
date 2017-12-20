@@ -41,9 +41,8 @@ window.onload = function () {
     //event que controla quina opcio de la pag 1
     document.addEventListener("keydown", function(e){
     	if(e.keyCode == 403 && pag == 1){  //play
-    		pag = 2;
-    		$('#play').show();
-    		$('#opcions').hide();
+    		pag == 1;
+    		console.log("1");
     	}
     	if(e.keyCode == 404 && pag == 1){  //ranking
     		console.log("2");
@@ -80,13 +79,16 @@ window.onload = function () {
     		var selector = document.getElementById("selector");
     		changeSelector(selector, up, down, right, left);
     	}
+    	
+    	
+
     	up = 0; 
     	down = 0; 
     	left = 0; 
     	right = 0;
     });
     
-    //opcions dels banquers aceptar o rechazar
+    
     document.addEventListener("keydown", function(e){
     	
     	if(e.keyCode == 404 && actiu == 1){ //voto vermell
@@ -109,14 +111,18 @@ window.onload = function () {
     
 
     
+    
    
+    
+    
     //CONTROLA TOTES LES FUNCIONS DEL OK
     document.addEventListener("keydown", function(e){
-    	
+
     	//fa un exit del joc quan clica ok i s'aniria a la pantalla principal 
     	if(e.keyCode == 13 && fiJoc == 1){
     		
     	}
+    	
     	//funcio que selecciona els cofres que es van descartant en partida
     	if(e.keyCode == 13 && seleccionat == 1 && actiu == 0 && pag == 2){
     		var ok = obrirCofreSeleccionat(valors, valorsOberts); 

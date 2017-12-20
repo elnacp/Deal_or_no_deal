@@ -20,16 +20,7 @@
 
 <body>
 
-	<!-- PANELL DE OPCIONS -->
-	<div class="container" id="opcions" >
-		<input type="image" name="play" src="">
-		<input type="image" name="ranquing" src="">
-		<input type="image" name="instrucions" src="">
-		<input type="image" name="exit" src="">
-	</div>
-
-	<!-- PLAY CONTENT -->
-	  <div class = "container-fluid" id="play">
+	  <div class = "container-fluid">
 		<div class="row">
    			<div class="col-md-2">
    				
@@ -130,8 +121,6 @@
  		<p id="panel-oferta"> HAS GANADO </p> <p id="oferta"> </p> 
  	</div>
  	
- 	
- 	<!-- MUSICA DE FONDO -->
  	<!--   <object data="./music/Deal Or No Deal - Music Clips.mp3" type="audio/mpeg" width="0" height="0" >
     	<param name="autostart" value="1">
     	<param name="playcount" value="true"> 
@@ -141,7 +130,6 @@
  	
 	 <script src="js/chestController.js"></script>
 	 <script src="js/banqueroController.js"></script>
-	 <script src="js/options.js"></script>
 </body>
 
 </html>

@@ -22,7 +22,7 @@ window.onload = function () {
     $('#pop-up-banquero').hide();
 	$('#acceptaOferta').hide();
     if(pag == 1){  // amaga el panell fins que estem a la pantalla 2
-    	$('#play').hide();
+    	$('play').hide();
     }
 	
 	
@@ -38,29 +38,9 @@ window.onload = function () {
         }
     }
     
-    //event que controla quina opcio de la pag 1
-    document.addEventListener("keydown", function(e){
-    	if(e.keyCode == 403 && pag == 1){  //play
-    		pag = 2;
-    		$('#play').show();
-    		$('#opcions').hide();
-    	}
-    	if(e.keyCode == 404 && pag == 1){  //ranking
-    		console.log("2");
-    	}
-    	if(e.keyCode == 405 && pag == 1){  //instruccions
-    		console.log("3");
-    	}
-    	if(e.keyCode == 406 && pag == 1){  // exit
-    		console.log("4");
-    	}
-    	
-    });
-    
-    
-    
     //CONTROLA TOTES LES FUNCIONES AMB LES TECLES
     document.addEventListener("keydown", function(e){
+    	var selector = document.getElementById("selector");
     	//console.log("actiu en fletxes" +actiu);
     	switch(e.keyCode){
 			case 38:  //UP
@@ -76,20 +56,20 @@ window.onload = function () {
 				down = 1;
 				break;
     	}
-    	if(actiu == 0 && pag == 2){
-    		var selector = document.getElementById("selector");
+    	if(actiu == 0){
     		changeSelector(selector, up, down, right, left);
     	}
+
     	up = 0; 
     	down = 0; 
     	left = 0; 
     	right = 0;
     });
     
-    //opcions dels banquers aceptar o rechazar
+    
     document.addEventListener("keydown", function(e){
-    	
-    	if(e.keyCode == 404 && actiu == 1){ //voto vermell
+    	///quan estas en el popup si cliques cap abaix acceptes o rechazas la proposicio
+    	if(e.keyCode == 404 && actiu == 1){
     		//rechaza la oferta
     		fiJoc = 1;
     		var oferta = document.getElementById("message-banquero2");
@@ -99,7 +79,7 @@ window.onload = function () {
     		var panel = document.getElementById("oferta");
     		panel.innerHTML = oferta.innerHTML;
     	}
-    	if(e.keyCode == 403 && actiu == 1){ // voto verd
+    	if(e.keyCode == 403 && actiu == 1){
     		fiJoc = 0;
     		actiu = 0; 
     		$('#pop-up-banquero').hide();
@@ -107,16 +87,15 @@ window.onload = function () {
     	
     });
     
-
     
-   
     //CONTROLA TOTES LES FUNCIONS DEL OK
     document.addEventListener("keydown", function(e){
-    	
+
     	//fa un exit del joc quan clica ok i s'aniria a la pantalla principal 
     	if(e.keyCode == 13 && fiJoc == 1){
     		
     	}
+    	
     	//funcio que selecciona els cofres que es van descartant en partida
     	if(e.keyCode == 13 && seleccionat == 1 && actiu == 0 && pag == 2){
     		var ok = obrirCofreSeleccionat(valors, valorsOberts); 

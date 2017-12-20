@@ -20,12 +20,12 @@
 
 <body>
 
-	<!-- PANELL DE OPCIONS -->
+
 	<div class="container" id="opcions" >
-		<input type="image" name="play" src="">
-		<input type="image" name="ranquing" src="">
-		<input type="image" name="instrucions" src="">
-		<input type="image" name="exit" src="">
+		<button type="button">PLAY</button>
+		<button type="button">RANKING</button>
+		<button type="button">INSTRUCTIONS</button>
+		<button type="button">EXIT</button>
 	</div>
 
 	<!-- PLAY CONTENT -->
@@ -141,7 +141,6 @@
  	
 	 <script src="js/chestController.js"></script>
 	 <script src="js/banqueroController.js"></script>
-	 <script src="js/options.js"></script>
 </body>
 
 </html>
