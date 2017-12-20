@@ -131,24 +131,11 @@
  	</div>
  	
  	
- 	<input id="premi" value="" hidden="true">
- 	 
  	<!-- MUSICA DE FONDO -->
  	<!--   <object data="./music/Deal Or No Deal - Music Clips.mp3" type="audio/mpeg" width="0" height="0" >
     	<param name="autostart" value="1">
     	<param name="playcount" value="true"> 
 	</object>-->
-	
-	
-	
-	<!-- RANQUING -->
-	<div class="container" id="ranquing">
-		<p> RANQUING </p>
-		<ol id="llista_ranquing">
-		  
-		</ol> 
-	
-	</div>
  	
  	
  	

@@ -1,0 +1,16 @@
+
+
+//llegeix fitxer json de ranquing i retorna ranquing
+function mostrarRanquing(){
+	var ranquing = [];
+	
+	
+	return ranquing;
+}
+
+
+
+//una vegada acabada la partida
+function actualitzarRanquing(premi, ranquing){
+	
+}

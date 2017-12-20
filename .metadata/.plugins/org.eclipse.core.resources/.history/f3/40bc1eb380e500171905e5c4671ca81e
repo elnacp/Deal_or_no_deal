@@ -12,7 +12,7 @@ function banqueroAppears(torns, valors){
 			aux = aux + parseInt(valors[i]);
 			quantitat++;
 		}
-		oferta = aux / valors.length;
+		oferta =aux / valors.length;
 		oferta = oferta/2; //fer un valor més petit de la oferta
 		oferta = Math.round(oferta);
 		$('#pop-up-banquero').show();

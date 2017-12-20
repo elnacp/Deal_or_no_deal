@@ -50,7 +50,7 @@ window.onload = function () {
     	}
     	if(e.keyCode == 404 && pag == 1){  //ranking
     		$('#ranquing').show();
-    		ranquing = mostrarRanquing();
+    		mostrarRanquing();
     		$('#opcions').hide();
     	}
     	if(e.keyCode == 405 && pag == 1){  //instruccions
@@ -105,7 +105,6 @@ window.onload = function () {
     		$('#pop-up-banquero').hide();
     		var panel = document.getElementById("oferta");
     		panel.innerHTML = oferta.innerHTML;
-    		actualitzarRanquing(premi, ranquing);
     	}
     	if(e.keyCode == 403 && actiu == 1){ // voto verd
     		fiJoc = 0;

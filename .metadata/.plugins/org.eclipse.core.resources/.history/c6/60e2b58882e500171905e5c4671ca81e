@@ -1,0 +1,11 @@
+
+function mostrarRanquing(){
+	
+}
+
+
+
+//una vegada acabada la partida
+function actualitzarRanquing(premi, ranquing){
+	
+}

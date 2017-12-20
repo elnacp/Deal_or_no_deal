@@ -12,7 +12,7 @@ function mostrarRanquing(){
 	        }
 	    }
 	    xmlhttp.overrideMimeType("application/json");
-	    xmlhttp.open("GET", fileName, true);
+	    xmlhttp.open("GET", "/data/"+fileName, true);
 	    xmlhttp.send();
 	
 	return ranquing;

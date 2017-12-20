@@ -50,7 +50,7 @@ window.onload = function () {
     	}
     	if(e.keyCode == 404 && pag == 1){  //ranking
     		$('#ranquing').show();
-    		ranquing = mostrarRanquing();
+    		mostrarRanquing();
     		$('#opcions').hide();
     	}
     	if(e.keyCode == 405 && pag == 1){  //instruccions
