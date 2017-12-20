@@ -121,10 +121,10 @@
  		<p id="panel-oferta"> HAS GANADO </p> <p id="oferta"> </p> 
  	</div>
  	
- 	<!--   <object data="./music/Deal Or No Deal - Music Clips.mp3" type="audio/mpeg" width="0" height="0" >
+ 	 <object data="./music/Deal Or No Deal - Music Clips.mp3" type="audio/mpeg" width="0" height="0" >
     	<param name="autostart" value="1">
     	<param name="playcount" value="true"> 
-	</object>-->
+	</object>
  	
  	
  	
