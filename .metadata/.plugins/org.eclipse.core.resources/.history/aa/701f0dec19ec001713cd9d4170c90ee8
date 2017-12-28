@@ -1,0 +1,77 @@
+
+
+//llegeix fitxer json de ranquing i retorna ranquing array per despres actualitzar
+function mostrarRanquing(ranquing){
+	var llista = document.getElementById("llista_ranquing");
+	
+	for( var i = 0; i < ranquing.length; i++){
+		var element = document.createElement("li");
+		element.innerHTML = "Usuari: " +ranquing[i][0] + "Puntuació:" + ranquing[i][1];
+		llista.appendChild(element);
+	}
+
+}
+
+
+//PER QUAN SAPIGUEM LLEGIR EL JSON 
+/*	console.log("something");
+
+    var fileName = "ranquing.json";
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange=function() {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            didResponse(xmlhttp.responseText);
+        }
+    }
+    xmlhttp.overrideMimeType("application/json");
+    xmlhttp.open("GET", "./data/"+fileName, true);
+    xmlhttp.send(); 
+}
+function didResponse(response){
+	console.log("Arribo");
+    jsonArray = JSON.parse(response);
+    console.log(jsonArray);
+}*/
+
+
+//acaba partida i actualitza el fitxer ranquing si cal 
+function actualitzarRanquing(oferta, ranquing){
+	var p = 0;
+	var llista = [];
+	for ( var i = 0;  i < ranquing.length; i++){
+		console.log("entro1");
+		if( oferta > ranquing[i][1] && p == 0){
+			p = i;
+		}
+	}
+	//guardem els que s'han desplaçat cap a baix 
+	for( var d = p+1; d< ranquing.length; d++ ){
+		console.log("entro");
+		llista.push(ranquing[d]);
+	}
+	var indexllista = 0; 
+	var entro = 0; 
+	for( var s = 0; s < 6; s++){
+		if( entro == 1){
+			ranquing[s][0] = llista[indexllista][0];
+			ranquing[s][1] = llista[indexllista][1];
+			indexllista++;
+			console.log("entro2");
+		}
+		if( s == p){
+			ranquing[s][0] = "-";
+			ranquing[s][1] = oferta;
+			entro = 1; 
+		}
+		
+	}
+	
+	console.log(ranquing);
+	
+	
+	
+	
+	
+}
+
+

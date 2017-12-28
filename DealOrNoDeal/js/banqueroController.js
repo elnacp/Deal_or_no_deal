@@ -13,11 +13,11 @@ function banqueroAppears(torns, valors){
 			quantitat++;
 		}
 		oferta = aux / valors.length;
-		oferta = oferta/2; //fer un valor més petit de la oferta
+		oferta = oferta/5; //fer un valor més petit de la oferta
 		oferta = Math.round(oferta);
 		$('#pop-up-banquero').show();
 		var popup = document.getElementById("message-banquero2");
-		popup.innerHTML = oferta + "€";
+		popup.innerHTML = oferta;
 		// el popup salta i fins que no dongui instruccions no funcionara
 		actiu = 1; 
 		
