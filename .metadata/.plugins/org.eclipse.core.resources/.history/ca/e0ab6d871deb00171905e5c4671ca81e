@@ -5,19 +5,24 @@ function mostrarRanquing(){
 
 	console.log("something");
 
-    var fileName = "ranquing.json";
+	var fileName = "ranquing.json";
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange=function() {
+    xmlhttp.onreadystatechange= function() {
+
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            didResponse(xmlhttp.responseText);
+        	didResponse(xmlhttp.responseText);
+            
+      
         }
     }
     xmlhttp.overrideMimeType("application/json");
-    xmlhttp.open("GET", "./data/"+fileName, true);
-    xmlhttp.send(); 
+    xmlhttp.open("GET", "data/"+fileName, true);
+    xmlhttp.send();
+	
+	
 }
+
 function didResponse(response){
-	console.log("Arribo");
     jsonArray = JSON.parse(response);
     console.log(jsonArray);
 }

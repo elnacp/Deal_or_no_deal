@@ -1,8 +1,0 @@
-window.onload = function () {
-	
-	AudioPlayer mAudioPlayer; 
-	mAudioPlayer = this.mService.createAudioPlayer();
-	
-	
-	
-}

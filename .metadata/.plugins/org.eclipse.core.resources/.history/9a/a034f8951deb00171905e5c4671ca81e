@@ -13,11 +13,10 @@ function mostrarRanquing(){
         }
     }
     xmlhttp.overrideMimeType("application/json");
-    xmlhttp.open("GET", "./data/"+fileName, true);
+    xmlhttp.open("GET", "data/"+fileName, true);
     xmlhttp.send(); 
 }
 function didResponse(response){
-	console.log("Arribo");
     jsonArray = JSON.parse(response);
     console.log(jsonArray);
 }
