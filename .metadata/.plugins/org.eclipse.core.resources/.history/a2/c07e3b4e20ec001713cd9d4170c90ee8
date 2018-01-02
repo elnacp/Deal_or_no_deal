@@ -113,7 +113,7 @@ window.onload = function () {
     		panel.innerHTML = oferta.innerHTML;
     		premi = oferta.innerHTML;
     		ranquing = actualitzarRanquing(premi, ranquing);
-    		console.log("ranquingActualitzat"+ranquing);
+    		console.log("ranquingActualitzat" +ranquing);
     	}
     	if(e.keyCode == 403 && actiu == 1){ // voto vermell
     		fiJoc = 0;

@@ -41,7 +41,6 @@ function actualitzarRanquing(premi, ranquing){
 	var ranquingActualitzat = [];
 	var calActualitzar = 0;
 	
-	
 	console.log(premi);
 	for ( var i = 0;  i < ranquing.length; i++){
 		console.log(premi);
@@ -52,26 +51,23 @@ function actualitzarRanquing(premi, ranquing){
 			break;
 		}
 	}
-	var inserta = 0;
+
 	if(calActualitzar == 1){
-		console.log("HELLO");
 		for(var s = 0; s < p; s++){
 			ranquingActualitzat.push(ranquing[s]);
-			console.log("entro 1");
 		}
-		console.log("estic fora");
-		//insertem el nostre objecte
 		 var objecte = [["hola", premi]];
 		ranquingActualitzat.push(objecte);
-		
-		//guardem els que s'han desplaçat cap a baix 
 		for( var d = p; d<4; d++ ){
-			console.log("entro aqui");
 			ranquingActualitzat.push(ranquing[d]);
 		}
 		
 		console.log("ranquing"+ranquingActualitzat);
+		return ranquingActualitzat;
 	}	
+	
+	return ranquing;
+	
 }
 
 
