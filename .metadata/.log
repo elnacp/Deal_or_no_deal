@@ -7388,3 +7388,22 @@ java.lang.RuntimeException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+!SESSION 2018-01-02 17:57:39.443 -----------------------------------------------
+eclipse.buildId=2.0
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en
+Framework arguments:  -keyring /Users/elnacabotparedes/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/elnacabotparedes/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-01-02 17:57:43.471
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-02 17:57:51.802
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.tizen.common.ui.Startup 1 0 2018-01-02 17:57:53.236
+!MESSAGE SDK Information: Path [/Users/elnacabotparedes/tizen-studio], Data Path [/Users/elnacabotparedes/tizen-studio-data], Platform Path [/Users/elnacabotparedes/tizen-studio/platforms/tizen-4.0/wearable]
+
+!ENTRY org.eclipse.core.jobs 2 2 2018-01-02 17:57:57.731
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.tizen.common.ui.statusbar.UpdateNotificationControl$2
