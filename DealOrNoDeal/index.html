@@ -14,22 +14,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
+   
     <script src="js/main.js"></script>
     
 </head>
 
 <body>
 
-	<!-- PANELL DE OPCIONS -->
-	<div class="container" id="opcions" >
-		<input type="image" name="play" src="">
-		<input type="image" name="ranquing" src="">
-		<input type="image" name="instrucions" src="">
-		<input type="image" name="exit" src="">
-	</div>
+	<!-- PANELL INICIAL -->
+ 	<div class="container-fluid" id="inici">
+	  <button id="buttonMain1" type="button" class="btn btn-sunny text-uppercase btn-lg">Play!</button>
+	  <button id="buttonMain2" type="button" class="btn btn-sunny text-uppercase btn-lg">Ranking</button>
+	  <button id="buttonMain3" type="button" class="btn btn-sunny text-uppercase btn-lg">Instructions</button>
+ 	</div>
 
 	<!-- PLAY CONTENT -->
-	  <div class = "container-fluid" id="play">
+	  <div class = "container-fluid" id="mainPanell">
 		<div class="row">
    			<div class="col-md-2">
    				
@@ -114,16 +114,22 @@
  		  
 	</div>
 	<!-- PANELL DEL BANQUER -->
-	<div  class="container" id="pop-up-banquero"  >
- 		 		<p id="message-banquero1"  class="row"> El banquero ofrece un intercambio de: <p id="message-banquero2"  class="row"> 10000</p> <p>€</p> </p>
- 		 		<input type="image"  id ="banquero" src="./img/welcome.jpg"   class="row"  />
- 		 		<div class="row">
-	 		 		<input type="image"  class ="rechazar" name="rechazar" src="./img/rechazar.png"    />
-	 		 		<input type="image"  class ="acceptar" name="acceptar" src="./img/acceptar.png"    />
-	 		 			
- 		 		</div>
- 		 		
- 	</div>
+		<!-- PANELL DEL BANQUER -->
+	<div class="container" id="pop-up-banquero">
+		<!--  <input type="image"  class ="fons" name="fons" src="./img/PopUp.jpg"/>-->
+      <div class="row"  id="message-banquero1">
+	      <p id="message-banquero1">The bank man offers you: </p>
+      </div>
+      <div class="row">
+	      <input type="image"  id ="banquero" src="./img/presentador.png" class="row"/>
+	      <p id="message-banquero2"></p>
+      </div>
+      <hr>
+      <div class="row" id="buttons">
+ 		<input type="image"  class ="rechazar" name="rechazar" src="./img/rechazar.png" />
+ 		<input type="image"  class ="acceptar" name="acceptar" src="./img/acceptar.png"/>
+		</div>
+	</div>
  	
  	<!-- PANELL DE FINAL DE JOC O ACCEPTAR LA OFERTA -->
  	<div class="container" id="acceptaOferta">
@@ -150,7 +156,7 @@
 	
 	</div>
  	
- 	
+
  	
 	 <script src="js/chestController.js"></script>
 	 <script src="js/banqueroController.js"></script>

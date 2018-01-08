@@ -1,11 +1,49 @@
 * {
-    font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif;
+    font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif, Franklin Gothic Heavy;
 }
 
 body {
     margin: 0px auto;
     background-color:#222;
 }
+
+li{
+	color: white;
+}
+
+.btn{
+    margin: 4px;
+    box-shadow: 1px 1px 5px #888888;
+}
+
+.btn-sunny {
+color: #fff;
+background-color: #f4ad49;
+border-bottom:2px solid #c38a3a;
+}
+
+.btn-sunny:hover, .btn-sky.active:focus, .btn-sunny:focus, .open>.dropdown-toggle.btn-sunny {
+color: #fff;
+background-color: #f5b75f;
+border-bottom:2px solid #c4924c;
+outline: none;
+}
+
+
+.btn-sunny:active, .btn-sunny.active {
+color: #fff;
+background-color: #d69840;
+border-top:2px solid #ab7a33;
+}
+
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+    outline: none;
+    outline-offset: 0px;
+}
+
 
 /*.contents {
 	display: flex;
@@ -28,32 +66,105 @@ body {
 }
 
 .container{
-	width: 1000px;
-	height:1000px;
-	background-color: black;
+	width: 2000px;
+	height:900px;
+	margin-top:40px;
+	padding-top:40px;
+  	border: 3px solid white;
+  	border-radius: 30px;
+}
+
+#inici{
+	background-image: url("../img/Boxes.png");
+	width:100%;
+	height:100%;
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+
+.btn btn-sunny text-uppercase btn-lg{
+	color: #F8B347;
+}
+
+#buttonMain1{
+	width:350px;
+	height:100px;
+	position:absolute;
+	top:550px;
+	left: 775px;
+	font-size:40px;
+	font-family: "Franklin Gothic Heavy";
+}
+
+#buttonMain2{
+	width:350px;
+	height:100px;
+	position:absolute;
+	top:700px;
+	left: 775px;
+	font-size:40px;
+	font-family: "Franklin Gothic Heavy";
+}
+
+#buttonMain3{
+	width:350px;
+	height:100px;
+	position:absolute;
+	top:850px;
+	left: 775px;
+	font-size:40px;
+	font-family: "Franklin Gothic Heavy";
+}
+
+#pop-up-banquero{
+	 background-image: url("../img/PopUp.jpg");
+	  background-size: 2000px 900px;
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  background-position: center;
 }
 
 #banquero{
-	width: 750px; 
-	height: 600px;
+	width: 700px;
+	height: 500px;
+	padding-left:15px;
+	padding-right:15px;
 }
 
-.acceptar, .rechazar{
+.acceptar{
 	width: 200px;
-	height: 200px; 
+	height: 200px;
+  	align: center;
 }
 
+ .rechazar{
+ 	width: 200px;
+	height: 200px;
+	margin: 10px;
+	align:  center;
+	margin-right:200px;
+ }
 
+#buttons{
+  margin-left: 250px;
+}
 
 #message-banquero1{
 	color: white;
-	font-size: 40px;
+	font-size: 50px;
+	align: center;
+	font-family: "Verdana";
+ 	 padding-left: 10px;
 }
+
 #message-banquero2{
 	color: white;
 	font-size: 100px;
+	padding-top:250px;
 }
-
 
 .col-md-2{
 	margin: auto;
@@ -68,7 +179,6 @@ body {
 	padding-top: 45px;
 	padding-bottom: 40px;
 	text-align: center;
-	/*background-color: red;*/
 	margin: none;
 	display: block;
 }
@@ -88,11 +198,10 @@ textarea{
 
 #prizes{
 	width: 100%;
-	height:50px;
+	height: 50px;
 }
 
 .image-chest{
-	
 	max-width:200px;
 	max-height:150px;
 	border: 0px solid white;
@@ -103,13 +212,9 @@ textarea{
 }
 
 #chests{
-	
 	margin: none;
 	width: 100%;
 }
-
-
-
 
 #panel-oferta, #oferta{
 	color: white;

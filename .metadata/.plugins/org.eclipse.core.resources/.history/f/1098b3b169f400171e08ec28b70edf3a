@@ -1,0 +1,89 @@
+
+
+//llegeix fitxer json de ranquing i retorna ranquing array per despres actualitzar
+
+function mostrarRanquing(ranquing, json){
+	var llista = document.getElementById("llista_ranquing");
+	
+	for(var i = 0; i < json.ranquing.length; i++){
+		var objecte = [[json.ranquing[i].userName, json.ranquing[i].valor]];
+		ranquing.push(objecte);
+	}
+	console.log(ranquing);
+	for( var i = 0; i < ranquing.length; i++){
+		var element = document.createElement("li");
+		element.innerHTML = "Usuari: " +ranquing[i][0][0] + "Puntuació:" + ranquing[i][0][1];
+		llista.appendChild(element);
+	}
+	
+	return ranquing;
+}
+
+
+
+//llegeix json
+function leerJSON(ranquing, opcio){
+	var jsonArray = [];
+    var url = "https://dealornodealtv2.000webhostapp.com/ranquing.json";
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange=function() {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            
+        	jsonArray = didResponse(xmlhttp.responseText);
+        	
+        	mostrarRanquing(ranquing, jsonArray);
+        	
+        }
+    }
+    xmlhttp.overrideMimeType("application/json");
+    xmlhttp.open("GET",url, true);
+    xmlhttp.send(); 
+    console.log("ranquing" + ranquing);
+    return ranquing;
+   
+}
+function didResponse(response){
+	var jsonArray = [];
+    jsonArray = JSON.parse(response);
+    return jsonArray;
+}
+
+
+
+//acaba partida i actualitza el fitxer ranquing si cal 
+function actualitzarRanquing(premi, ranquing){
+	var p = 0;
+	var llista = [];
+	var ranquingActualitzat = [];
+	var calActualitzar = 0;
+	
+	console.log(premi);
+	for ( var i = 0;  i < ranquing.length; i++){
+		console.log(premi);
+		
+		if( premi > ranquing[i][1]){
+			p = i;
+			calActualitzar = 1;
+			break;
+		}
+	}
+
+	if(calActualitzar == 1){
+		for(var s = 0; s < p; s++){
+			ranquingActualitzat.push(ranquing[s]);
+		}
+		 var objecte = [["hola", premi]];
+		ranquingActualitzat.push(objecte);
+		for( var d = p; d<4; d++ ){
+			ranquingActualitzat.push(ranquing[d]);
+		}
+		
+		console.log("ranquing"+ranquingActualitzat);
+		return ranquingActualitzat;
+	}	
+	
+	return ranquing;
+	
+}
+
+

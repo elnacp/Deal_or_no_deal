@@ -1,6 +1,5 @@
 INDEX VERSION 1.3+/Users/elnacabotparedes/Deal_or_no_deal/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
 3390855358.index
-2128304197.index
 2063550588.index
 3631583917.index
 3064882530.index

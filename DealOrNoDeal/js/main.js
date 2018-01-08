@@ -15,6 +15,8 @@ window.onload = function () {
     var fiJoc = 0;
     //var ranquing = []; // conter els millors resultats
     var premiFinal = 0; // conte el premi final
+    var json = [];
+    var opcio = 0;  //opcio 1 mostrar ranquing - 2 actualitza ranquing    
     
     var ranquing = [
                  ["-", 0],
@@ -31,10 +33,11 @@ window.onload = function () {
     $('#pop-up-banquero').hide();
 	$('#acceptaOferta').hide();
     if(pag == 1){  // amaga el panell fins que estem a la pantalla 2
-    	$('#play').hide();
+    	$('#mainPanell').hide();
     }
     $('#ranquing').hide();
 	
+	//leerJSON();
 	
     //barreja array de valors de cada cofre.
     function shuffle(a) {
@@ -52,21 +55,24 @@ window.onload = function () {
     document.addEventListener("keydown", function(e){
     	if(e.keyCode == 403 && pag == 1){  //play
     		pag = 2;
-    		$('#play').show();
-    		$('#opcions').hide();
+    		$('#mainPanell').show();
+    		$('#inici').hide();
     	}
     	if(e.keyCode == 404 && pag == 1){  //ranking
     		$('#ranquing').show();
     		mostrarRanquing(ranquing);
-    		$('#opcions').hide();
+    		
+    		//EN EL CASO DE FUNCIONE EL JSON
+    		//opcio = 1;
+    		//leerJSON(opcio, 0);
+    		
+    		$('#inici').hide();
     	}
     	if(e.keyCode == 405 && pag == 1){  //instruccions
-    		console.log("3");
-    		$('#opcions').hide();
+    		$('#inici').hide();
     	}
     	if(e.keyCode == 406 && pag == 1){  // exit
-    		console.log("4");
-    		$('#opcions').hide();
+    		$('#inici').hide();
     	}
     	
     });
@@ -75,7 +81,7 @@ window.onload = function () {
     
     //CONTROLA TOTES LES FUNCIONES AMB LES TECLES
     document.addEventListener("keydown", function(e){
-    	//console.log("actiu en fletxes" +actiu);
+
     	switch(e.keyCode){
 			case 38:  //UP
 				up = 1;
@@ -113,7 +119,11 @@ window.onload = function () {
     		panel.innerHTML = oferta.innerHTML;
     		premi = oferta.innerHTML;
     		ranquing = actualitzarRanquing(premi, ranquing);
-    		console.log("ranquingActualitzat"+ranquing);
+    		//console.log("ranquingActualitzat"+ranquing);
+    		
+    		//EN EL CAS DE QUE FUNCIONI EL JSON
+    		//opcio = 2;
+    		//leerJSON(opcio, premi);
     	}
     	if(e.keyCode == 403 && actiu == 1){ // voto vermell
     		fiJoc = 0;

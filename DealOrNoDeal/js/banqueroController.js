@@ -5,7 +5,6 @@ function banqueroAppears(torns, valors){
 	var actiu = 0;
 	
 	if( torns == 18 || torns == 13 || torns == 8 || torns == 4 || torns == 2){  
-		console.log("ENTRO");
 		
 		// el banquer et farà una proposta segons els diners que et quedin 
 		for ( var i= 0; i < valors.length; i++){
