@@ -1,0 +1,290 @@
+* {
+    font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif, Franklin Gothic Heavy;
+}
+
+body {
+	position: fixed;
+    background-image: url("../img/show.jpg");
+	width:100%;
+	height:100%;
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+li{
+	color:white;
+}
+
+.btn{
+    margin: 4px;
+    box-shadow: 1px 1px 5px #24211d;
+}
+
+.btn-sunny {
+color: #fff;
+background-color: #24211d;;
+border-bottom:2px solid #24211d;
+}
+
+.btn-sunny:hover, .btn-sky.active:focus, .btn-sunny:focus, .open>.dropdown-toggle.btn-sunny {
+color: #fff;
+background-color: #24211d;
+border-bottom:2px solid #24211d;
+outline: none;
+}
+
+
+.btn-sunny:active, .btn-sunny.active {
+color: #fff;
+background-color: #24211d;
+border-top:2px solid #24211d;
+}
+
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+    outline: none;
+    outline-offset: 0px;
+}
+
+
+/*.contents {
+	display: flex;
+	display: -webkit-flex;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	height:320px;
+}
+
+
+.content_text {
+	font-weight:bold;
+	font-size:5em;
+	color:#fff;
+}*/
+
+.container-fluid{
+	position: absolute;
+    z-index: -1;
+    
+}
+
+.container{
+	width: 2000px;
+	height:900px;
+  	border: 3px solid white;
+  	border-radius: 30px;
+}
+
+#inici{
+	background-image: url("../img/Boxes.png");
+	width:100%;
+	height:100%;
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+
+.btn btn-sunny text-uppercase btn-lg{
+	color: #24211d;
+}
+
+#buttonMain1{
+	width:350px;
+	height:100px;
+	position:absolute;
+	top: 550px;
+	left: 775px;
+	font-size:40px;
+	font-family: "Franklin Gothic Heavy";
+	background-color: #F25653;
+}
+
+#buttonMain2{
+	width:350px;
+	height:100px;
+	position:absolute;
+	top:700px;
+	left: 775px;
+	font-size:40px;
+	font-family: "Franklin Gothic Heavy";
+	background-color: #1A8255;
+}
+
+#buttonMain3{
+	width:350px;
+	height:100px;
+	position:absolute;
+	top:850px;
+	left: 775px;
+	font-size:40px;
+	font-family: "Franklin Gothic Heavy";
+	background-color: #E2E266;
+}
+
+#pop-up-banquero{
+
+	 background-image: url("../img/PopUp.jpg");
+	 background-size: 2000px 900px;
+	 background-attachment: fixed;
+	 margin-top:20px;
+	 
+}
+
+#banquero{
+	width: 700px;
+	height: 500px;
+	padding-left:15px;
+	padding-right:15px;
+}
+
+.acceptar{
+	width: 200px;
+	height: 200px;
+	padding-bottom: 20px;
+  	align: center;
+}
+
+ .rechazar{
+ 	width: 200px;
+	height: 200px;
+	padding-bottom: 20px;
+	align:  center;
+	margin-right:200px;
+ }
+
+#buttons{
+  margin-left: 250px;
+}
+
+#message-banquero1{
+	color: white;
+	font-size: 50px;
+	align: center;
+	font-family: "Verdana";
+ 	padding-left: 10px;
+}
+
+#message-banquero2{
+	color: white;
+	font-size: 100px;
+	padding-top:250px;
+}
+
+.col-md-2{
+	margin:none;
+	border: none;
+	padding: 10px;
+	background-color:lavender;
+}
+
+.col-md-8{
+	padding-left: 70px;
+	padding-top: 45px;
+	padding-bottom: 40px;
+	text-align: center;
+}
+
+textarea{
+	width:800px;
+}
+
+#user_chest{
+	width:580px;
+	height:400px;
+}
+
+textarea{
+	font-size: 40px;
+}
+
+#prizes{
+	width: 100%;
+	height: 50px;
+}
+
+.image-chest{
+	max-width:200px;
+	max-height:150px;
+	border: 0px solid white;
+}
+
+#selector{
+	border: 2px solid yellow;
+}
+
+#chests{
+	margin: none;
+	width: 100%;
+}
+
+#acceptaOferta{
+	 background-image: url("../img/PopUp.jpg");
+	 background-size: 2000px 900px;
+	 background-attachment: fixed;
+	 margin-top:20px;
+}
+
+#usuarioForm{
+	padding-top: 50px;
+	padding-left: 340px;	
+}
+
+#username{
+	color: white;
+	font-size: 50px;
+}
+
+#user{
+	height:50px;
+	width: 300px;
+	font-size:50px;	
+	margin-bottom: 40px;
+	margin-left: 70px;
+}
+
+#intro{
+	height: 100px;
+	width: 300px;
+	background-color: #ffffff;
+	color: #3333FF;
+	border-radius: 30px;
+	border: 2px solid #3333FF;
+	font-size: 30px;
+	margin-left: 70px;
+}
+
+.aceptarText{
+	color: white;
+	font-size: 50px;
+	padding-left: 235px;
+}
+
+.rechazarText{
+	color: white;
+	font-size: 50px;
+	padding-left: 285px;
+}
+
+#oferta{
+	color: white;
+	font-size: 150px;
+	align: center;
+	font-family: "Franklin Gothic Heavy";
+ 	padding-left: 335px;
+ 	padding-top: 50px;
+}
+
+#panel-oferta{
+	color: white;
+	font-size: 80px;
+	padding-left: 390px;
+	padding-top: 50px;
+	font-family: "Franklin Gothic Heavy";
+	
+}

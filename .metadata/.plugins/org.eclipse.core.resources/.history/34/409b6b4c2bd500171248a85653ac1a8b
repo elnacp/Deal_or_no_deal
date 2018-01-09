@@ -1,0 +1,62 @@
+
+window.onload = function () {
+    // TODO:: Do your initialization job
+	var up = 0;
+	var down = 0;
+	var right = 0;
+	var left = 0;
+	var cofreSeleccionat = 0; // indica quin cofre es del jugador
+	var seleccionat = 0; //indica si el  cofre ha estat seleccionat (FLAG)
+    var pag = 0;
+    
+    console.log(cofreSeleccionat);
+    console.log(seleccionat);
+    
+    document.addEventListener('tizenhwkey', function(e) {
+        if(e.keyName == "back")
+	try {
+	    tizen.application.getCurrentApplication().exit();
+	} catch (ignore) {
+	}
+    });
+
+    //MOURE EL CURSOR PER SOBRE DE TOTS ELS COFRES
+    document.addEventListener("keydown", function(e){
+    	var selector = document.getElementById("selector");
+    	switch(e.keyCode){
+			case 38:  //UP
+				up = 1;
+				break;
+			case 37:  //LEFT
+				left = 1;
+				break;
+			case 39:   //RIGHT
+				right = 1;
+				break;
+			case 40:  //DOWN
+				down = 1;
+				break;
+    	}
+    	
+    	changeSelector(selector, up, down, right, left);
+    	up = 0; 
+    	down = 0; 
+    	left = 0; 
+    	right = 0;
+    });
+    
+    document.addEventListener("keydown", function(e){
+    	if(e.keyCode == 13 && seleccionat == 0){   // El primer ok es per seleccionar cofre
+    		cofreUsuari();
+    	}
+    	
+    	
+    });
+    
+    
+   
+};
+
+
+
+

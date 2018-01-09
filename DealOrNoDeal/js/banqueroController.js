@@ -1,0 +1,41 @@
+function banqueroAppears(torns, valors){
+	var aux = 0;
+	var oferta = 0;
+	var quantitat = 0;
+	var actiu = 0;
+	
+	if( torns == 18 || torns == 13 || torns == 8 || torns == 4 || torns == 2){  
+		
+		// el banquer et farà una proposta segons els diners que et quedin 
+		for ( var i= 0; i < valors.length; i++){
+			aux = aux + parseInt(valors[i]);
+			quantitat++;
+		}
+		oferta = aux / valors.length;
+		oferta = oferta/5; //fer un valor més petit de la oferta
+		oferta = Math.round(oferta);
+		$('#pop-up-banquero').show();
+		var popup = document.getElementById("message-banquero2");
+		popup.innerHTML = oferta;
+		// el popup salta i fins que no dongui instruccions no funcionara
+		actiu = 1; 
+		
+	}
+	return actiu;
+}
+
+
+function tornFinal(torns){
+	console.log(torns);
+	if( torns == 0){
+		$('#cofreFinal').show();
+		var element = document.getElementById("user_chest");
+		document.getElementById("box1").src = element.src;  //agafa el cofre del usuari
+	
+		actiu2 = 1;
+	}else{
+		actiu2 = 0;
+	}
+	return actiu2;
+}
+

@@ -1,0 +1,92 @@
+// cursor que es mou per els cofres
+function changeSelector(selector, up, down, right, left){
+	var num = 0;
+	for ( var i = 1; i < 25; i++){
+		if( selector.name == i){
+			if( up == 1){
+				num = parseInt(selector.name)-6;
+				if( num > 0 && num < 25){
+					canviarSelector(selector, num);
+				}
+			}
+			if( down == 1){
+				num = parseInt(selector.name)+6;
+				if( num > 0 && num < 25){
+					canviarSelector(selector, num);
+				}
+			}
+			if( right == 1){
+				num = parseInt(selector.name)+1;
+				if(num < 25 ){
+					canviarSelector(selector, num);
+				}
+			}
+			if( left == 1){
+				num = parseInt(selector.name)-1;
+				if(num > 0 ){
+					canviarSelector(selector, num);
+				}
+			}
+		}
+	}
+}
+
+function canviarSelector(selector, num){
+	var aux = document.getElementsByName(num);
+	aux[0].id = 'selector';
+	selector.id = "";
+}
+
+
+// Agafa el cofre que el usuari ha escollit
+function cofreUsuari(cofreSeleccionat){
+	var num = 0; 
+	var cofre = document.getElementById("selector");
+	
+	//canviem la imatge del cofre del usuari per el que hagui seleccionat
+	var usuariCofre = document.getElementById("user_chest");
+	usuariCofre.src = cofre.src;
+	
+	//canviem el selector en el primer element de la llista
+	if(parseInt(cofre.name) == 1){   
+		num = 2;
+	}else{
+		num = 1; 
+	}
+	var aux = document.getElementsByName(num);
+	aux[0].id = 'selector';
+	cofre.id = "";
+	cofre.src = "./img/chestAgafat.png";
+
+}
+
+//obre els cofres que ha seleccionat el usuari que vol descartar
+function obrirCofreSeleccionat(valors, valorsOberts, torns){
+	var cofre = document.getElementById("selector");
+	var ok = 0;
+	if( cofre.getAttribute("src") != "./img/chestAgafat.png" ){
+		if(cofre.getAttribute("src")!= "./img/caja_abierta.png"){
+			if( torns != 0){
+				cofre.src = "./img/caja_abierta.png";
+				valorsOberts.push(valors[0]); 
+				var textarea = document.getElementById("message");
+				textarea.value = "The chest content: " + valors[0]+ "€"; // substitueix el contingut de text area
+				//var prizes = document.getElementByName("first");
+				value = "./img/prizes/"+valors[0]+".png";
+				//console.log($("[src='"+value+"'"));
+				var prize = document.querySelectorAll('[src="'+value+'"]');
+				prize[0].src = "./img/dinerAgafat.png";
+				valors.splice(0,1);// elimina el valor de array valor
+				ok = 1;
+			}
+			if( torns == 0){
+				ok = 0;
+			}
+			
+			
+		}
+	}
+	return  ok;
+	
+}
+	

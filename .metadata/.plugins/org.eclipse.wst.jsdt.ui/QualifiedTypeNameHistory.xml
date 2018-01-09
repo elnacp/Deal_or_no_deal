@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <qualifiedTypeNameHistroy/>
+=======
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="Number"/>
+<fullyQualifiedTypeName name="DownloadCallback"/>
+<fullyQualifiedTypeName name="Function"/>
+<fullyQualifiedTypeName name="Element"/>
+</qualifiedTypeNameHistroy>
+>>>>>>> rama_js
