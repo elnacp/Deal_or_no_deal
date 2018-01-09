@@ -93,7 +93,6 @@ window.onload = function () {
 		      $('#ranquing').hide();
 		      $('#inici').show();
 		      actiuRanquing = 0;
-		      actiuInstruccions = 0;
 		      $('#acceptaOferta').hide();
 	     }
     });
