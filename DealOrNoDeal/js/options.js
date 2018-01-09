@@ -1,8 +1,10 @@
 
 //llegeix fitxer json de ranquing i retorna ranquing array per despres actualitzar
 function mostrarRanquing(ranquing){
+	$("#acceptaOferta").hide();
 	var llista = document.getElementById("llista_ranquing");
-	
+	llista.innerHTML = '';
+	console.log("ranquing"+ranquing);
 	for( var i = 0; i < ranquing.length; i++){
 		var element = document.createElement("li");
 		element.innerHTML = "Usuari: " +ranquing[i][0] + "Puntuació:" + ranquing[i][1];
@@ -12,7 +14,7 @@ function mostrarRanquing(ranquing){
 }
 
 //acaba partida i actualitza el fitxer ranquing si cal 
-function actualitzarRanquing(premi, ranquing){
+function actualitzarRanquing(premi, ranquing, usuario){
 	var p = 0;
 	var llista = [];
 	var ranquingActualitzat = [];
@@ -28,10 +30,14 @@ function actualitzarRanquing(premi, ranquing){
 		for(var s = 0; s < p; s++){
 			ranquingActualitzat.push(ranquing[s]);
 		}
-		 var objecte = [["hola", premi]];
+		var nombre = "Jugador " +usuario;
+		
+		var objecte = [nombre, premi];
+		
 		ranquingActualitzat.push(objecte);
 		for( var d = p; d<4; d++ ){
-			ranquingActualitzat.push(ranquing[d]);
+			var objecte1 = [ranquing[d][0], ranquing[d][1]];
+			ranquingActualitzat.push(objecte1);
 		}
 		return ranquingActualitzat;
 	}	

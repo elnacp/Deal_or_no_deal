@@ -13,10 +13,6 @@ body {
 	background-position: center;
 }
 
-li{
-	color:white;
-}
-
 .btn{
     margin: 4px;
     box-shadow: 1px 1px 5px #24211d;
@@ -201,6 +197,8 @@ textarea{
 
 textarea{
 	font-size: 40px;
+	text-align: center;
+	padding-top:150px;
 }
 
 #prizes{
@@ -288,3 +286,107 @@ textarea{
 	font-family: "Franklin Gothic Heavy";
 	
 }
+#cofreFinal{
+	 background-image: url("../img/PopUp.jpg");
+	 background-size: 2000px 900px;
+	 background-attachment: fixed;
+	 margin-top:20px;
+}
+
+#titolfinal{
+	color: white;
+	font-size: 100px;
+	align: center;
+	font-family: "Franklin Gothic Heavy";
+	padding-left: 35px;
+ 	padding-top: 25px;
+}
+
+#subtitolfinal{
+	color: white;
+	font-size: 30px;
+	align: center;
+	font-family: "Franklin Gothic Heavy";
+	padding-left: 200px;
+	
+}
+
+.box{
+	padding-top:75px;
+	width: 500px;
+	height: 300px;
+}
+
+#box1{
+	padding-top:50px;
+	padding-left:125px;
+}
+
+#box2{
+	padding-top:50px;
+	padding-left:125px;
+}
+
+.keepText{
+	color: white;
+	font-size: 25px;
+	padding-left: 250px;
+	padding-top: 25px;
+}
+
+.changeText{
+	color: white;
+	font-size: 25px;
+	padding-left: 375px;
+	padding-top:25px;
+}
+
+.acceptarFinal{
+	width: 100px;
+	height: 100px;
+	padding-bottom: 20px;
+  	align: center;
+}
+
+.rechazarFinal{
+	width: 100px;
+	height: 100px;
+	padding-bottom: 20px;
+  	align: center;
+  	margin-left:400px;
+}
+
+#instruccions{
+	background-image: url("../img/Instructions.png");
+	width:100%;
+	height:100%;
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	
+}
+
+#ranquing{
+	background-image: url("../img/PopUp.jpg");
+	width:100%;
+	height:100%;
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+#rankTitle{
+	color: white;
+	font-size:150px;
+	padding-top: 50px;
+	padding-left:600px;
+	font-family: "Franklin Gothic Heavy";
+}
+#llista_ranquing{
+	color: white;
+	font-size: 80px;
+	font-family: "Franklin Gothic Heavy";
+	padding-left: 50px;
+	padding-top: 100px;

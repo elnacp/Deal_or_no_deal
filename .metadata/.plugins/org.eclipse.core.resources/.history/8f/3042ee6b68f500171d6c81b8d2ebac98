@@ -1,0 +1,94 @@
+
+
+function omplimMainPanell(){
+	
+	document.getElementById("mainPanell").innerHTML = "";
+	document.getElementById("mainPanell").innerHTML = "<div class='row'>"+
+   			+"<div class='col-md-2'>"+
+	 				
+				+"<input type='image'  id ='prizes'  name='first' src='./img/prizes/0,01.png'   />"+
+				+"<input type='image'  id ='prizes'  src='./img/prizes/0,5.png'   />"+
+				+"<input type='image'  id ='prizes'  src='./img/prizes/1.png'   />"+
+				+"<input type='image'  id ='prizes'  src='./img/prizes/5.png'   />"+
+				+"<input type='image'  id ='prizes'  src='./img/prizes/10.png'   />"+
+				+"<input type='image'  id ='prizes'  src='./img/prizes/30.png'   />"+
+				+"<input type='image'  id ='prizes'  src='./img/prizes/50.png'   />"+
+				+"<input type='image'  id ='prizes'  src='./img/prizes/70.png'   />"+
+				+"<input type='image'  id ='prizes'  src='./img/prizes/100.png'   />"+
+				+"<input type='image'  id ='prizes'  src='./img/prizes/300.png'   />"+
+				+"<input type='image'  id ='prizes'  src='./img/prizes/500.png'   />"+
+				+"<input type='image'  id ='prizes'  src='./img/prizes/1000.png'   />"+
+
+	
+   			+"</div>"+
+    		+"<div class='col-md-8'>"+
+    		
+    			+"<div id='chests' class= 'row'>"+
+    			
+    				
+					+"<input type='image'  class ='image-chest' id='selector' name='1' src='./img/chests/1.png'  />"+
+					+"<input type='image'  class ='image-chest' id='' name='2' src='./img/chests/2.png'  />"+
+					+"<input type='image'  class ='image-chest' id='' name='3' src='./img/chests/3.png'  />"+
+					+"<input type='image'  class ='image-chest' id='' name='4' src='./img/chests/4.png'  />"+
+					+"<input type='image'  class ='image-chest' id='' name='5' src='./img/chests/5.png'  />"+
+					+"<input type='image'  class ='image-chest' id='' name='6' src='./img/chests/6.png'  />"+
+				+"<div>"+
+				+"<div id='chests' class= 'row'>"+
+					+"<input type='image'  class ='image-chest' id='' name='7' src='./img/chests/7.png'  />"+
+					+"<input type='image'  class ='image-chest' id='' name='8' src='./img/chests/8.png'  />"+
+					+"<input type='image'  class ='image-chest' id='' name='9' src='./img/chests/9.png'  />"+
+					+"<input type='image'  class ='image-chest' id='' name='10' src='./img/chests/10.png'  />"+
+					+"<input type='image'  class ='image-chest' id='' name='11' src='./img/chests/11.png'  />"+
+					+"<input type='image'  class ='image-chest' id='' name='12' src='./img/chests/12.png'  />"+
+					
+				+"<div>"+	
+				+"<div id='chests' class= 'row'>"+
+					+"<input type='image'  class ='image-chest' id='' name='13' src='./img/chests/13.png'  />"+
+					+"<input type='image'  class ='image-chest' id='' name='14' src='./img/chests/14.png'  />"+
+					+"<input type='image'  class ='image-chest' id='' name='15' src='./img/chests/15.png'  />"+
+					+"<input type='image'  class ='image-chest' id='' name='16' src='./img/chests/16.png'  />"+
+					+"<input type='image'  class ='image-chest' id='' name='17' src='./img/chests/17.png'  />"+
+					+"<input type='image'  class ='image-chest' id='' name='18' src='./img/chests/18.png'  />"+
+					
+				+"<div>"+	
+				+"<div id='chests' class= 'row'>"+
+					+"<input type='image'  class ='image-chest' id='' name='19' src='./img/chests/19.png'  />"+
+					+"<input type='image'  class ='image-chest' id='' name='20' src='./img/chests/20.png'  />"+
+					+"<input type='image'  class ='image-chest' id='' name='21' src='./img/chests/21.png'  />"+
+					+"<input type='image'  class ='image-chest' id='' name='22' src='./img/chests/22.png'  />"+
+					+"<input type='image'  class ='image-chest' id='' name='23' src='./img/chests/23.png'  />"+
+					+"<input type='image'  class ='image-chest' id='' name='24' src='./img/chests/24.png'  />"+
+					
+				+"<div>"+	
+			+"<div class='col-md-2'>"+
+ 				
+				+"<input type='image'  id ='prizes'  name='first' src='./img/prizes/1300.png'   />"+
+				+"<input type='image'  id ='prizes'  src='./img/prizes/1500.png'   />"+
+				+"<input type='image'  id ='prizes'  src='./img/prizes/3000.png'   />"+
+				+"<input type='image'  id ='prizes'  src='./img/prizes/5000.png'   />"+
+				+"<input type='image'  id ='prizes'  src='./img/prizes/10000.png'   />"+
+				+"<input type='image'  id ='prizes'  src='./img/prizes/30000.png'   />"+
+				+"<input type='image'  id ='prizes'  src='./img/prizes/50000.png'   />"+
+				+"<input type='image'  id ='prizes'  src='./img/prizes/70000.png'   />"+
+				+"<input type='image'  id ='prizes'  src='./img/prizes/100000.png'   />"+
+				+"<input type='image'  id ='prizes'  src='./img/prizes/300000.png'   />"+
+				+"<input type='image'  id ='prizes'  src='./img/prizes/500000.png'   />"+
+				+"<input type='image'  id ='prizes'  src='./img/prizes/1000000.png'   />"+
+
+	
+   			+"</div>"+
+   		+"</div>"+
+				
+
+ 		 
+ 		 +"<div class='row'>"+
+ 		 		+"<input type='image' id='presenter' src='./img/banquero_propuesta.jpg'/>"+
+ 		 		+"<textarea id='message' rows='4' cols='6' readonly></textarea>"+  
+ 		 		+"<input type='image' id='user_chest' src='./img/chestAgafat.png'/>"+
+ 		+"</div>";
+	
+   			
+	
+	
+	
+}

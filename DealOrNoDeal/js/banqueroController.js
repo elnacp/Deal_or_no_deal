@@ -21,15 +21,21 @@ function banqueroAppears(torns, valors){
 		actiu = 1; 
 		
 	}
-	if( torns == 1){  //canviar el cofre que tens per el cofre que queda
-		/*var textarea = document.getElementById("message");
-		textarea.value = "Vols canviar el cofre?";*/
-		
-		//PANELL DE VOLS CANVIAR COFRE?
-		
-		actiu = 1;
-	}
-	
 	return actiu;
+}
+
+
+function tornFinal(torns){
+	console.log(torns);
+	if( torns == 0){
+		$('#cofreFinal').show();
+		var element = document.getElementById("user_chest");
+		document.getElementById("box1").src = element.src;  //agafa el cofre del usuari
+	
+		actiu2 = 1;
+	}else{
+		actiu2 = 0;
+	}
+	return actiu2;
 }
 

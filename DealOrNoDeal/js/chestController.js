@@ -61,22 +61,26 @@ function cofreUsuari(cofreSeleccionat){
 }
 
 //obre els cofres que ha seleccionat el usuari que vol descartar
-function obrirCofreSeleccionat(valors, valorsOberts){
+function obrirCofreSeleccionat(valors, valorsOberts, torns){
 	var cofre = document.getElementById("selector");
 	var ok = 0;
 	if( cofre.getAttribute("src") != "./img/chestAgafat.png" ){
 		if(cofre.getAttribute("src")!= "./img/caja_abierta.png"){
-			cofre.src = "./img/caja_abierta.png";
-			valorsOberts.push(valors[0]); 
-			var textarea = document.getElementById("message");
-			textarea.value = "The chest content: " + valors[0]+ "€"; // substitueix el contingut de text area
-			//var prizes = document.getElementByName("first");
-			value = "./img/prizes/"+valors[0]+".png";
-			//console.log($("[src='"+value+"'"));
-			var prize = document.querySelectorAll('[src="'+value+'"]');
-			prize[0].src = "./img/dinerAgafat.png";
-			valors.splice(0,1);// elimina el valor de array valor
-			ok = 1;
+			document.getElementById("box2").src = cofre.src;
+			
+			if( torns != 0){
+				cofre.src = "./img/caja_abierta.png";
+				valorsOberts.push(valors[0]); 
+				var textarea = document.getElementById("message");
+				textarea.value = "The chest content: " + valors[0]+ "€"; // substitueix el contingut de text area
+				//var prizes = document.getElementByName("first");
+				value = "./img/prizes/"+valors[0]+".png";
+				//console.log($("[src='"+value+"'"));
+				var prize = document.querySelectorAll('[src="'+value+'"]');
+				prize[0].src = "./img/dinerAgafat.png";
+				valors.splice(0,1);// elimina el valor de array valor
+				ok = 1;
+			}
 		}
 	}
 	return  ok;

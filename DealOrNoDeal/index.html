@@ -14,6 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    
     <script src="js/main.js"></script>
     
 </head>
@@ -26,6 +27,10 @@
 	  <button id="buttonMain2" type="button" class="btn btn-sunny text-uppercase btn-lg">Ranking</button>
 	  <button id="buttonMain3" type="button" class="btn btn-sunny text-uppercase btn-lg">Instructions</button>
  	</div>
+ 	
+ 	<!-- INSTRUCCIONS -->
+	<div class="container-fluid" id="instruccions">
+	</div>
 
 	<!-- PLAY CONTENT -->
 	  <div class = "container-fluid" id="mainPanell">
@@ -131,13 +136,28 @@
  	<div class="container" id="acceptaOferta">
  		<p id="panel-oferta"> YOU WIN </p> <p id="oferta"> </p> 
  		<form action="" method="POST" id="usuarioForm">
-  			<h3 id="username">ENTER USERNAME: </h3><br>
-			<input id="user" type="text" name="username" value="Username">
 			<br>
 			<button id="intro" type="button">ENTER</button>
 		</form> 
  	</div>
  	
+ 	<!-- PANELL DE SELECCIO FINAL DEL COFRE -->
+ 	<div class="container" id="cofreFinal">
+ 		<p id="titolfinal"> WHICH WILL BE YOUR FINAL CHOICE?</p> 
+ 		<p id="subtitolfinal">You will keep the price from the box you choose!</p> 
+ 		<div class="row" id="cofres">
+	 		<input type="image"  class ="box" id="box1" src="./img/chests/12.png" />
+	 		<input type="image"  class ="box" id="box2" src="./img/chests/24.png"/>
+		</div>
+		<div class="row">
+	      	<h3 class="keepText">KEEP BOX</h3>
+	      	<h3 class="changeText">CHANGE BOX</h3>
+	      </div>
+	      <div class="row" id="buttons">
+	 		<input type="image"  class ="acceptarFinal" name="acceptar" src="./img/acceptar.png"/>
+		    <input type="image"  class ="rechazarFinal" name="rechazar" src="./img/rechazar.png" />
+		  </div>
+ 	</div>
  	
  	
  	<!-- PANELL DE EXIT -->
@@ -165,18 +185,16 @@
 	
 	
 	
-	<!-- RANQUING -->
-	<div class="container" id="ranquing">
-		<p> RANQUING </p>
-		<ol id="llista_ranquing">
-		  
-		</ol> 
-	
+	 <!-- RANQUING -->
+	<div class="container-fluid" id="ranquing">
+		<h1 id="rankTitle"> RANQUING </p>
+		<ol id="llista_ranquing"></ol> 
 	</div>
  	
 	 <script src="js/chestController.js"></script>
 	 <script src="js/banqueroController.js"></script>
 	 <script src="js/options.js"></script>
+	 <script src="js/reiniciarPartida.js"></script>
 </body>
 
 </html>
