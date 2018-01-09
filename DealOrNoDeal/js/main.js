@@ -36,6 +36,8 @@ window.onload = function () {
     	$('#mainPanell').hide();
     }
     $('#ranquing').hide();
+   
+    $('#exiting').hide();
 	
 	//leerJSON();
 	
