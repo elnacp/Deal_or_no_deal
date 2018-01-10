@@ -187,7 +187,7 @@
 	
 	 <!-- RANQUING -->
 	<div class="container-fluid" id="ranquing">
-		<h1 id="rankTitle"> RANKING </p>
+		<h1 id="rankTitle"> RANking </p>
 		<ol id="llista_ranquing"></ol> 
 	</div>
  	

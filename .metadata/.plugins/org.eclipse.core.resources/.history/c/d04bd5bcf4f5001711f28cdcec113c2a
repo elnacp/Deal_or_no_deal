@@ -7,7 +7,7 @@ function mostrarRanquing(ranquing){
 	console.log("ranquing"+ranquing);
 	for( var i = 0; i < ranquing.length; i++){
 		var element = document.createElement("li");
-		element.innerHTML = "Username: " +ranquing[i][0] + "    Prize:" + ranquing[i][1];
+		element.innerHTML = "Usuari: " +ranquing[i][0] + "Puntuació:" + ranquing[i][1];
 		llista.appendChild(element);
 	}
 

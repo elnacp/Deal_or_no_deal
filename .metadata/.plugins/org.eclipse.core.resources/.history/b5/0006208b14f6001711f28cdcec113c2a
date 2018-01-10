@@ -161,14 +161,14 @@ window.onload = function () {
     		var oferta = document.getElementById("message-banquero2");
     		//console.log(oferta.innerHTML);
     		$('#acceptaOferta').show();
-    		$('#cofreFinal').hide();
+    		$('#pop-up-banquero').hide();
     		var panel = document.getElementById("oferta");
     		panel.innerHTML = oferta.innerHTML;
     		premi = oferta.innerHTML;
     		usuario++;
     		ranquing = actualitzarRanquing(premi, ranquing, usuario);
     		console.log("ranquingActualitzat"+ranquing);
-    		actiu2 = 0;
+    		actiu = 0;
     		
     	}
     	

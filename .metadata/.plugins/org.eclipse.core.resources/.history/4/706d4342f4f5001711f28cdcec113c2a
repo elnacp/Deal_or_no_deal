@@ -158,23 +158,29 @@ window.onload = function () {
     	if(e.keyCode == 404 && actiu2 == 1){ //acepta el intercanvi
     		document.getElementById("box1").src = "./img/caja_abierta.png";
     		fiJoc = 1; 
-    		var oferta = document.getElementById("message-banquero2");
-    		//console.log(oferta.innerHTML);
     		$('#acceptaOferta').show();
-    		$('#cofreFinal').hide();
+    		var oferta = document.getElementById("message-banquero2");
     		var panel = document.getElementById("oferta");
     		panel.innerHTML = oferta.innerHTML;
     		premi = oferta.innerHTML;
     		usuario++;
     		ranquing = actualitzarRanquing(premi, ranquing, usuario);
-    		console.log("ranquingActualitzat"+ranquing);
-    		actiu2 = 0;
-    		
+    		//console.log("ranquingActualitzat"+ranquing);
+    		actiu = 0;
     	}
     	
     	if(e.keyCode == 403 && actiu2 == 1){ //no accepta el intercanvi
     		document.getElementById("box2").src = "./img/caja_abierta.png";
     		fiJoc = 1;
+    		$('#acceptaOferta').show();
+    		$('#pop-up-banquero').hide();
+    		var panel = document.getElementById("oferta");
+    		panel.innerHTML = oferta.innerHTML;
+    		premi = oferta.innerHTML;
+    		usuario++;
+    		ranquing = actualitzarRanquing(premi, ranquing, usuario);
+    		//console.log("ranquingActualitzat"+ranquing);
+    		actiu = 0;
     	}
     	
     	

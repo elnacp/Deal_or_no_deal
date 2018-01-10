@@ -158,17 +158,6 @@ window.onload = function () {
     	if(e.keyCode == 404 && actiu2 == 1){ //acepta el intercanvi
     		document.getElementById("box1").src = "./img/caja_abierta.png";
     		fiJoc = 1; 
-    		var oferta = document.getElementById("message-banquero2");
-    		//console.log(oferta.innerHTML);
-    		$('#acceptaOferta').show();
-    		$('#cofreFinal').hide();
-    		var panel = document.getElementById("oferta");
-    		panel.innerHTML = oferta.innerHTML;
-    		premi = oferta.innerHTML;
-    		usuario++;
-    		ranquing = actualitzarRanquing(premi, ranquing, usuario);
-    		console.log("ranquingActualitzat"+ranquing);
-    		actiu2 = 0;
     		
     	}
     	
