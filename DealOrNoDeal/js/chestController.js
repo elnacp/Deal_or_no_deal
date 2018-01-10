@@ -63,16 +63,26 @@ function cofreUsuari(cofreSeleccionat){
 //obre els cofres que ha seleccionat el usuari que vol descartar
 function obrirCofreSeleccionat(valors, valorsOberts, torns){
 	var cofre = document.getElementById("selector");
+	var presentador = document.getElementById("presenter");
 	var ok = 0;
 	if( cofre.getAttribute("src") != "./img/chestAgafat.png" ){
 		if(cofre.getAttribute("src")!= "./img/caja_abierta.png"){
 			document.getElementById("box2").src = cofre.src;
-			
 			if( torns != 0){
 				cofre.src = "./img/caja_abierta.png";
 				valorsOberts.push(valors[0]); 
 				var textarea = document.getElementById("message");
-				textarea.value = "The chest content: " + valors[0]+ "€"; // substitueix el contingut de text area
+				if(valors[0] > 1300){
+					presentador.src = "./img/Bad_news.png";
+					textarea.value = "That's just bad luck! The chest content was " + valors[0]+ "€"; // substitueix el contingut de text area
+					var audio = new Audio('./music/ouch.mp3');
+					audio.play();
+				}else{
+					presenter.src = "./img/Pointing.png";
+					textarea.value = "Great guess! The chest content was " + valors[0]+ "€"; // substitueix el contingut de text area
+					var audio = new Audio('./music/cheers.wav');
+					audio.play();
+				}
 				//var prizes = document.getElementByName("first");
 				value = "./img/prizes/"+valors[0]+".png";
 				//console.log($("[src='"+value+"'"));
