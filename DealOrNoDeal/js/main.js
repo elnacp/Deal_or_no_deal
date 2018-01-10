@@ -1,4 +1,4 @@
-
+//funció principal javascript del programa
 window.onload = function () {
     // TODO:: Do your initialization job
 	var up = 0;
@@ -13,7 +13,6 @@ window.onload = function () {
     var torns  = 24; 
     var actiu = 0;
     var fiJoc = 0;
-    //var ranquing = []; // conter els millors resultats
     var premiFinal = 0; // conte el premi final
     var json = [];
     var opcio = 0;  //opcio 1 mostrar ranquing - 2 actualitza ranquing    
@@ -23,30 +22,33 @@ window.onload = function () {
     var actiuInstruccions = 0;
     
     
-   
+    // RANQUING PROVISIONAL
     var ranquing = [
                  ["-", 0],
                  ["-", 0],
                  ["-", 0],
                  ["-", 0],
                  ["-", 0]
-               ]; // RANQUING PROVISIONAL
-    
+               ]; 
+    //Valors possibles que el jugador pot guanyar
     valors = ["0,01", "0,5", "1","5", "10", "30", "50", "70", "100", "300", "500", "1000",
               "1300", "1500", "3000", "5000", "10000", "30000", "50000", "70000", "100000", "300000", "500000", "1000000" ];
     
+    //barreja valors per assignar-se de forma aleatòria en els cofres del joc
     shuffle(valors);
+    
+    //amaga els panells innecessaris per iniciar l'aplicació
     $('#pop-up-banquero').hide();
 	$('#acceptaOferta').hide();
-    if(pag == 1){  // amaga el panell fins que estem a la pantalla 2
-    	$('#mainPanell').hide();
-    }
     $('#ranquing').hide();
     $('#instruccions').hide();
     $('#exiting').hide();
 	$('#cofreFinal').hide();
 	
-	
+	// amaga el panell fins que estem a la pantalla 2
+    if(pag == 1){ 
+    	$('#mainPanell').hide();
+    }
 	
 	//leerJSON();
 	
@@ -62,14 +64,18 @@ window.onload = function () {
         }
     }
     
-    //event que controla quina opcio de la pag 1
+    //event que controla quina opció es selecciona del menú principal
     document.addEventListener("keydown", function(e){
-    	if(e.keyCode == 403 && pag == 1){  //play
+    	
+    	//Selecció de l'opció Play
+    	if(e.keyCode == 403 && pag == 1){  
     		pag = 2;
     		$('#mainPanell').show();
     		$('#inici').hide();
     	}
-    	if(e.keyCode == 404 && pag == 1 && actiuRanquing == 0){  //ranking
+    	
+    	//Selecció de l'opció Ranquing
+    	if(e.keyCode == 404 && pag == 1 && actiuRanquing == 0){  
     		$('#ranquing').show();
     		$('#acceptaOferta').hide();
     		mostrarRanquing(ranquing);
@@ -82,13 +88,16 @@ window.onload = function () {
     		$('#inici').hide();
     	}
 
-    	if(e.keyCode == 405 && pag == 1 && actiuInstruccions == 0){  //instruccions
+    	//Selecció de l'opció Instruccions
+    	if(e.keyCode == 405 && pag == 1 && actiuInstruccions == 0){ 
     	      $('#instruccions').show();
     	      $('#inici').hide();
     	      actiuInstruccions = 1;
     	      $('#acceptaOferta').hide();
     	     }
-	     if(e.keyCode == 406 && pag == 1){  // back
+    	
+    	//Selecció de l'opció de tornar al menú inicial
+	     if(e.keyCode == 406 && pag == 1){  
 		      $('#instruccions').hide();
 		      $('#ranquing').hide();
 		      $('#inici').show();
@@ -100,7 +109,7 @@ window.onload = function () {
     
     
     
-    //CONTROLA TOTES LES FUNCIONES AMB LES TECLES
+    //controla les opcions de les fletxes del mando
     document.addEventListener("keydown", function(e){
 
     	switch(e.keyCode){
@@ -117,6 +126,8 @@ window.onload = function () {
 				down = 1;
 				break;
     	}
+    	
+    	//activa les fletxes mentre la pantalla de joc estigui activa
     	if(actiu == 0 && pag == 2){
     		var selector = document.getElementById("selector");
     		changeSelector(selector, up, down, right, left);
@@ -130,51 +141,72 @@ window.onload = function () {
     //opcions dels banquers aceptar o rechazar
     document.addEventListener("keydown", function(e){
     	
-    	if(e.keyCode == 404 && actiu == 1){ //voto verd
-    		console.log("ENTRO");
+    	if(e.keyCode == 404 && actiu == 1){ //boto verd
+    		
+    		//fica les opcions del pop up del banquer en el HTML
     		fiJoc = 1;
     		var oferta = document.getElementById("message-banquero2");
-    		//console.log(oferta.innerHTML);
     		$('#acceptaOferta').show();
     		$('#pop-up-banquero').hide();
     		var panel = document.getElementById("oferta");
     		panel.innerHTML = oferta.innerHTML;
     		premi = oferta.innerHTML;
+    		
+    		//dona un nou nom al usuari de la partida per a després ser registrat en el ranquing
     		usuario++;
+    		//actualitza el ranquing
     		ranquing = actualitzarRanquing(premi, ranquing, usuario);
-    		console.log("ranquingActualitzat"+ranquing);
+    		console.log(ranquing);
     		actiu = 0;
     		
     		//EN EL CAS DE QUE FUNCIONI EL JSON
     		//opcio = 2;
     		//leerJSON(opcio, premi);
     	}
-    	if(e.keyCode == 403 && actiu == 1){ // voto vermell
+    	
+    	if(e.keyCode == 403 && actiu == 1){ //boto vermell
     		fiJoc = 0;
     		actiu = 0; 
     		$('#pop-up-banquero').hide();
     	}
     	
+    	//boto vermell i verd per quan només queden 2 cofres en joc
     	if(e.keyCode == 404 && actiu2 == 1){ //acepta el intercanvi
     		document.getElementById("box1").src = "./img/caja_abierta.png";
     		fiJoc = 1; 
     		var oferta = document.getElementById("message-banquero2");
-    		//console.log(oferta.innerHTML);
     		$('#acceptaOferta').show();
     		$('#cofreFinal').hide();
     		var panel = document.getElementById("oferta");
-    		panel.innerHTML = oferta.innerHTML;
-    		premi = oferta.innerHTML;
+    		panel.innerHTML = valors[0];
+    		premi = valors[0];
+    		
+    		//dona un nou nom al usuari de la partida per a després ser registrat en el ranquing
     		usuario++;
+    		
+    		//actualitza el ranquing
     		ranquing = actualitzarRanquing(premi, ranquing, usuario);
-    		console.log("ranquingActualitzat"+ranquing);
     		actiu2 = 0;
+    		
     		
     	}
     	
     	if(e.keyCode == 403 && actiu2 == 1){ //no accepta el intercanvi
     		document.getElementById("box2").src = "./img/caja_abierta.png";
     		fiJoc = 1;
+    		var oferta = document.getElementById("message-banquero2");
+    		$('#acceptaOferta').show();
+    		$('#cofreFinal').hide();
+    		var panel = document.getElementById("oferta");
+    		panel.innerHTML = valors[0] + "€";
+    		premi = valors[0];
+    		
+    		//dona un nou nom al usuari de la partida per a després ser registrat en el ranquing
+    		usuario++;
+    		
+    		//actualitza el ranquing
+    		ranquing = actualitzarRanquing(premi, ranquing, usuario);
+    		actiu2 = 0;
     	}
     	
     	
@@ -183,9 +215,7 @@ window.onload = function () {
     });
     
 
-    
-   
-    //CONTROLA TOTES LES FUNCIONS DEL OK
+    //Controla les funcions amb el boto Enter o OK
     document.addEventListener("keydown", function(e){
     	
     	//fa un exit del joc quan clica ok i s'aniria a la pantalla principal 
@@ -195,6 +225,7 @@ window.onload = function () {
     		$("#mainPanell").hide();
     		pag = 1;
     		$("#inici").show();
+    		//es reinicia el panell principal per iniciar una nova partida
     		omplimMainPanell();
     		valors = ["0,01", "0,5", "1","5", "10", "30", "50", "70", "100", "300", "500", "1000",
     	              "1300", "1500", "3000", "5000", "10000", "30000", "50000", "70000", "100000", "300000", "500000", "1000000" ];
@@ -208,7 +239,8 @@ window.onload = function () {
     		fiJoc = 0;
     	    
     	}
-    	//funcio que selecciona els cofres que es van descartant en partida
+    	
+    	//funció que selecciona els cofres que es van descartant en partida
     	if(e.keyCode == 13 && seleccionat == 1 && actiu == 0 && pag == 2){
     		var ok = obrirCofreSeleccionat(valors, valorsOberts, torns); 
     		if( ok == 1){
@@ -220,7 +252,7 @@ window.onload = function () {
     		
     	}
     	
-    	//funcio que selecciona el cofre del usuari en el torn 1
+    	//funció que selecciona el cofre del usuari en el torn 1
     	if(e.keyCode == 13 && seleccionat == 0 && actiu == 0 && pag == 2){  
     		cofreUsuari(cofreSeleccionat);
     		seleccionat = 1;

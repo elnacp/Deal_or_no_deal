@@ -1,7 +1,9 @@
+/*tipografies disponibles per al disseny del nostre programa*/
 * {
     font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif, Franklin Gothic Heavy;
 }
 
+/*implementacions a tot el cos del programa; fixem mides i posicions*/
 body {
 	position: fixed;
     background-image: url("../img/show.jpg");
@@ -13,6 +15,7 @@ body {
 	background-position: center;
 }
 
+/*codi extern seleccionat per a la elaboració dels botons del menú principal*/
 .btn{
     margin: 4px;
     box-shadow: 1px 1px 5px #24211d;
@@ -46,22 +49,11 @@ border-top:2px solid #24211d;
     outline-offset: 0px;
 }
 
-
-/*.contents {
-	display: flex;
-	display: -webkit-flex;
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	height:320px;
+.btn btn-sunny text-uppercase btn-lg{
+	color: #24211d;
 }
 
-
-.content_text {
-	font-weight:bold;
-	font-size:5em;
-	color:#fff;
-}*/
-
+/*informació dels contenidors principals; fixem posicions i mides*/
 .container-fluid{
 	position: absolute;
     z-index: -1;
@@ -75,6 +67,7 @@ border-top:2px solid #24211d;
   	border-radius: 30px;
 }
 
+/*control del panell de inici del programa*/
 #inici{
 	background-image: url("../img/Boxes.png");
 	width:100%;
@@ -85,11 +78,7 @@ border-top:2px solid #24211d;
 	background-position: center;
 }
 
-
-.btn btn-sunny text-uppercase btn-lg{
-	color: #24211d;
-}
-
+/*definicio final dels botons del menu principal*/
 #buttonMain1{
 	width:350px;
 	height:100px;
@@ -123,20 +112,21 @@ border-top:2px solid #24211d;
 	background-color: #E2E266;
 }
 
+/*control de la mida del presentador*/
 #presenter{
 	height:405px;
 	width:540px;
 }
 
+/*definicions finals del pop up del banquer*/
 #pop-up-banquero{
-
 	 background-image: url("../img/PopUp.jpg");
 	 background-size: 2000px 900px;
 	 background-attachment: fixed;
 	 margin-top:20px;
-	 
 }
 
+/*definicio de la imatge del banquer al pop up*/
 #banquero{
 	width: 700px;
 	height: 500px;
@@ -144,6 +134,7 @@ border-top:2px solid #24211d;
 	padding-right:15px;
 }
 
+/*definicio dels botons del pop up del banquer*/
 .acceptar{
 	width: 200px;
 	height: 200px;
@@ -163,6 +154,7 @@ border-top:2px solid #24211d;
   margin-left: 250px;
 }
 
+/*definicio final dels textos del pop up del banquer*/
 #message-banquero1{
 	color: white;
 	font-size: 50px;
@@ -177,6 +169,7 @@ border-top:2px solid #24211d;
 	padding-top:250px;
 }
 
+/*definicio de posicions del panell del joc*/
 .col-md-2{
 	margin:none;
 	border: none;
@@ -191,21 +184,21 @@ border-top:2px solid #24211d;
 	text-align: center;
 }
 
+/*marca la mida del textarea del panell inferior de la partida*/
 textarea{
 	width:800px;
-}
-
-#user_chest{
-	width:580px;
-	height:400px;
-}
-
-textarea{
 	font-size: 40px;
 	text-align: center;
 	padding-top:150px;
 }
 
+/*marca la mida del cofre escollit per l'usuari*/
+#user_chest{
+	width:580px;
+	height:400px;
+}
+
+/*controla varis factors del taulell de joc; els premis, el selectr, els cofres, etc...*/
 #prizes{
 	width: 100%;
 	height: 50px;
@@ -226,6 +219,7 @@ textarea{
 	width: 100%;
 }
 
+/*controla el panell d'acceptar oferta*/
 #acceptaOferta{
 	 background-image: url("../img/PopUp.jpg");
 	 background-size: 2000px 900px;
@@ -233,24 +227,7 @@ textarea{
 	 margin-top:20px;
 }
 
-#usuarioForm{
-	padding-top: 50px;
-	padding-left: 340px;	
-}
-
-#username{
-	color: white;
-	font-size: 50px;
-}
-
-#user{
-	height:50px;
-	width: 300px;
-	font-size:50px;	
-	margin-bottom: 40px;
-	margin-left: 70px;
-}
-
+/*Boto de enter per tornar al menu principal*/
 #intro{
 	height: 100px;
 	width: 300px;
@@ -259,9 +236,10 @@ textarea{
 	border-radius: 30px;
 	border: 2px solid #3333FF;
 	font-size: 30px;
-	margin-left: 70px;
+	margin-left: 400px;
 }
 
+/*defineix els texts del panell del banquer*/
 .aceptarText{
 	color: white;
 	font-size: 50px;
@@ -291,6 +269,8 @@ textarea{
 	font-family: "Franklin Gothic Heavy";
 	
 }
+
+/*defineix els textos del pop up final del joc*/
 #cofreFinal{
 	 background-image: url("../img/PopUp.jpg");
 	 background-size: 2000px 900px;
@@ -316,6 +296,7 @@ textarea{
 	
 }
 
+/*marca la mida del cofre del menu final amb els dos cofres*/
 .box{
 	padding-top:75px;
 	width: 500px;
@@ -332,12 +313,14 @@ textarea{
 	padding-left:125px;
 }
 
+/*defineix els textos del pop up final amb els dos cofres*/
 .keepText{
 	color: white;
 	font-size: 25px;
 	padding-left: 250px;
 	padding-top: 25px;
 }
+
 
 .changeText{
 	color: white;
@@ -361,6 +344,7 @@ textarea{
   	margin-left:400px;
 }
 
+/*control del panell de instruccions del joc*/
 #instruccions{
 	background-image: url("../img/Instructions.png");
 	width:100%;
@@ -372,14 +356,15 @@ textarea{
 	
 }
 
+/*control del panell de instruccions del joc*/
 #ranquing{
-	background-image: url("../img/PopUp.jpg");
+	background-image: url("../img/Rank.png");
 	width:100%;
 	height:100%;
 	background-size: 1920px 1080px;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
 	background-position: center;
+	
 }
 
 #rankTitle{
@@ -394,6 +379,6 @@ textarea{
 	color: white;
 	font-size: 60px;
 	font-family: "Franklin Gothic Heavy";
-	padding-left: 50px;
+	padding-left: 75px;
 	padding-top: 100px;
 }

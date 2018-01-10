@@ -13,30 +13,32 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
     
+    <!-- CSS i Javascript principals propis -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"/> 
     <script src="js/main.js"></script>
     
 </head>
 
 <body>
 
-	<!-- PANELL INICIAL -->
+	<!-- PANELL INICIAL: conté el HTML del primer panell del joc -->
  	<div class="container-fluid" id="inici">
 	  <button id="buttonMain1" type="button" class="btn btn-sunny text-uppercase btn-lg">Play!</button>
 	  <button id="buttonMain2" type="button" class="btn btn-sunny text-uppercase btn-lg">Ranking</button>
 	  <button id="buttonMain3" type="button" class="btn btn-sunny text-uppercase btn-lg">Instructions</button>
  	</div>
  	
- 	<!-- INSTRUCCIONS -->
+ 	<!-- INSTRUCCIONS: conté el HTML del panell on trobem les instruccions del joc -->
 	<div class="container-fluid" id="instruccions">
 	</div>
 
-	<!-- PLAY CONTENT -->
+	<!-- PLAY CONTENT: conté el HTML on trobem tot el material principal del joc; con les caixes i els premis -->
 	  <div class = "container-fluid" id="mainPanell">
 		<div class="row">
    			<div class="col-md-2">
 	 				
+	 			<!-- Imatges dels premis petits del joc -->
 				<input type="image"  id ="prizes"  name="first" src="./img/prizes/0,01.png"   />
 				<input type="image"  id ="prizes" src="./img/prizes/0,5.png"   />
 				<input type="image"  id ="prizes" src="./img/prizes/1.png"  	/>
@@ -53,6 +55,7 @@
    			</div>
     		<div class="col-md-8">
     		
+    			<!-- Imatges dels 24 cofres de la partida. Estan distribuits en quatre files de 6 caixes per a millor aspecte visual -->
     			<div id="chests" class= "row">
 					<input type="image"  class ="image-chest" id="selector" name="1" src="./img/chests/1.png"  />
 					<input type="image"  class ="image-chest" id="" name="2" src="./img/chests/2.png"  />
@@ -87,6 +90,8 @@
 				</div>
     		
     		</div>
+    		
+    		<!-- Imatges dels premis grans del joc -->
    		 	<div class="col-md-2">
 				<input type="image"  id ="prizes" src="./img/prizes/1300.png"   />
 				<input type="image"  id ="prizes" src="./img/prizes/1500.png"   />
@@ -103,6 +108,7 @@
    		 	</div>
  		 </div>
  		 
+ 		 <!-- Conté la informació del nivell inferior de la pantalla de partida. És on trobem el presentador, el missatge del contingut de la caixa que descartem i la caixa que primer ha seleccionat el jugador -->
  		 <div class="row">
  		 		<input type="image" id="presenter" src="./img/banquero_propuesta.jpg"/>
  		 		<textarea id="message" rows="4" cols="6" readonly>WELCOME TO BOXES! START BY SELECTING YOUR OWN BOX</textarea>  
@@ -110,7 +116,7 @@
  		  </div> 	  
  	</div>
  	
-	<!-- PANELL DEL BANQUER -->
+	<!-- PANELL DEL BANQUER: pop up on apareix la informació que et proporciona el banquer en la partida. Pots acceptar la oferta i acabar la partida o rebutjar-la i tornar al panell de joc principal -->
 	<div class="container" id="pop-up-banquero">
 		<div id="test">
 	      <div class="row" >
@@ -118,6 +124,7 @@
 	      </div>
 	      <div class="row">
 		      <input type="image"  id ="banquero" src="./img/presentador.png" class="row"/>
+		      <!-- S'indica el preu que ofereix el banquer, es sumen tots els valors que li queden en la pantalla i es divideix per obtenir un valor inferior pero acceptable -->
 		      <p id="message-banquero2"></p>
 	      </div>
 	      <hr>
@@ -132,16 +139,16 @@
 		</div>
 	</div>
  	
- 	<!-- PANELL DE FINAL DE JOC O ACCEPTAR LA OFERTA -->
+ 	<!-- PANELL DE FINAL DE JOC O ACCEPTAR LA OFERTA: Quan acceptes una oferta del banquer o selecciones la ultima caixa i et mostra el que has guanyat -->
  	<div class="container" id="acceptaOferta">
- 		<p id="panel-oferta"> YOU WIN </p> <p id="oferta"> €</p> 
+ 		<p id="panel-oferta"> YOU WIN </p> <p id="oferta"> </p> 
  		<form action="" method="POST" id="usuarioForm">
 			<br>
-			<button id="intro" type="button">ENTER</button>
+			<button id="intro" type="button">BACK</button>
 		</form> 
  	</div>
  	
- 	<!-- PANELL DE SELECCIO FINAL DEL COFRE -->
+ 	<!-- PANELL DE SELECCIO FINAL DEL COFRE: quan només queden 2 caixes en joc, es permet al usuario triar una per obtenir com a premi el valor del contingut de la caixa enlloc de descartar-lo -->
  	<div class="container" id="cofreFinal">
  		<p id="titolfinal"> WHICH WILL BE YOUR FINAL CHOICE?</p> 
  		<p id="subtitolfinal">You will keep the price from the box you choose!</p> 
@@ -160,7 +167,7 @@
  	</div>
  	
  	
- 	<!-- PANELL DE EXIT -->
+ 	<!-- PANELL DE EXIT: panell de sortida del joc. S'activa amb el boto de exit del mando, al estar en un simulador, pero, no podem apreciar-lo -->
 	<div class="container" id="exiting">
 		<p id="panel-oferta"> You sure you want to exit? </p> 
 		<div id="test">
@@ -177,7 +184,7 @@
  	
  	<input id="premi" value="" hidden="true">
  	 
- 	<!-- MUSICA DE FONDO -->
+ 	<!-- MÚSICA DE FONS: música ambiental mentre s'executa el joc -->
  	<object data="./music/Deal Or No Deal - Music Clips.mp3" type="audio/mpeg" width="0" height="0" >
     	<param name="autostart" value="1">
     	<param name="playcount" value="true"> 
@@ -185,12 +192,13 @@
 	
 	
 	
-	 <!-- RANQUING -->
+	 <!-- RANQUING: finestra on es el mostra el ranquing de millors jugadors -->
 	<div class="container-fluid" id="ranquing">
-		<h1 id="rankTitle"> RANKING </p>
+		<h1 id="rankTitle"> RANQUING </p>
 		<ol id="llista_ranquing"></ol> 
 	</div>
  	
+ 	<!-- Altres javascripts que interactuen amb el programa -->
 	 <script src="js/chestController.js"></script>
 	 <script src="js/banqueroController.js"></script>
 	 <script src="js/options.js"></script>
@@ -198,4 +206,3 @@
 </body>
 
 </html>
-

@@ -1,7 +1,6 @@
 
-
+//elimina el estat del panell de joc i l'inicialitza de nou
 function omplimMainPanell(){
-	console.log("Arriboooooo");
 	var element = document.createElement('div'); 
 	element.className = "row";
 	element.innerHTML = '<div class="col-md-2"> <input type="image"  id ="prizes"  name="first" src="./img/prizes/0,01.png"   />'+
@@ -75,19 +74,8 @@ function omplimMainPanell(){
 		'</div>'
 		'</div>';
 	
-		
-	
 	var main = document.getElementById("mainPanell");
 	main.innerHTML = '';
 	main.appendChild(element);
-	
-	
-	
-	console.log(main);
-
-	
-   			
-	
-	
 	
 }

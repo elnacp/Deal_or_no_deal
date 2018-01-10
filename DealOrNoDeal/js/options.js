@@ -7,7 +7,7 @@ function mostrarRanquing(ranquing){
 	console.log("ranquing"+ranquing);
 	for( var i = 0; i < ranquing.length; i++){
 		var element = document.createElement("li");
-		element.innerHTML = "Username: " +ranquing[i][0] + "    Prize:" + ranquing[i][1];
+		element.innerHTML = "Username: " +ranquing[i][0] + " Prize:" + ranquing[i][1] + "€";
 		llista.appendChild(element);
 	}
 
@@ -20,12 +20,16 @@ function actualitzarRanquing(premi, ranquing, usuario){
 	var ranquingActualitzat = [];
 	var calActualitzar = 0;
 	for ( var i = 0;  i < ranquing.length; i++){
+		
+		//mira si cal actualitzar el ranquing
 		if( premi > ranquing[i][1]){
 			p = i;
 			calActualitzar = 1;
 			break;
 		}
 	}
+	
+	//actualitza el ranquing
 	if(calActualitzar == 1){
 		for(var s = 0; s < p; s++){
 			ranquingActualitzat.push(ranquing[s]);
@@ -35,6 +39,7 @@ function actualitzarRanquing(premi, ranquing, usuario){
 		var objecte = [nombre, premi];
 		
 		ranquingActualitzat.push(objecte);
+		
 		for( var d = p; d<4; d++ ){
 			var objecte1 = [ranquing[d][0], ranquing[d][1]];
 			ranquingActualitzat.push(objecte1);

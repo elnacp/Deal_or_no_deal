@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/DealOrNoDeal" version="1.0.0" viewmodes="maximized">
     <tizen:application id="h2D7B0q1T2.DealOrNoDeal" package="h2D7B0q1T2" required_version="3.0"/>
+    <author email="ls30917@salleurl.edu o ls31161@salleurl.edu">Elna Cabot i Andrea Garcia </author>
     <content src="index.html"/>
+    <description>Versió per a la televisió del joc americà &quot;Deal or No Deal&quot; o, més conegut a España com a &quot;Allá tu&quot;.</description>
     <feature name="http://tizen.org/feature/screen.size.all"/>
     <icon src="logo.png"/>
     <name>DealOrNoDeal</name>
